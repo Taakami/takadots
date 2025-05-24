@@ -10,6 +10,6 @@
   ];
   programs = {
     kitty.enable = true;
-    programs.git.enable = true;
+    git.enable = true;
   };
 }
