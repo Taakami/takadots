@@ -7,6 +7,6 @@
     font = "JetBrains Mono";
     plugins = with pkgs; [
       rofi-calc
-    ]
+    ];
   };
 }
