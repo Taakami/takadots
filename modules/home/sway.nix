@@ -7,6 +7,7 @@
     enable = true;
     wrapperFeatures.gtk = true; # Fixes common issues with GTK 3 apps
     package = pkgs.swayfx;
+    checkConfig = false;
     config = rec {
       input."*" = {
           xkb_layout = "fr";
