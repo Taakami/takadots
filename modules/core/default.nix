@@ -31,5 +31,5 @@
     nerd-fonts.symbols-only
     twemoji-color-font
     noto-fonts-emoji
-  ]
+  ];
 }
