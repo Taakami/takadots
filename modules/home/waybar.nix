@@ -10,7 +10,7 @@
       modules-right = [ "battery" "clock" "backlight" "network" ];
       clock = {
         timezone = "Europe/Paris";
-      }
-    }
+      };
+    };
   };
 }

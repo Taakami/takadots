@@ -8,5 +8,5 @@
     plugins = with pkgs; [
       rofi-calc
     ]
-  }
+  };
 }
