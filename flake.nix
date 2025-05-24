@@ -23,11 +23,11 @@
     in
     {
     nixosConfigurations = {
-      olaptop = nixpkgs.lib.nixosSystem {
+      mars = nixpkgs.lib.nixosSystem {
           inherit system;
-          modules = [ ./hosts/olaptop ];
+          modules = [ ./hosts/mars ];
           specialArgs = {
-            host = "olaptop";
+            host = "mars";
             inherit self inputs username;
           };
         };
