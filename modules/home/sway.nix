@@ -18,7 +18,7 @@
       startup = [
         { command = "autotiling-rs"; }
       ];
-      bars= [
+      bars = [
         {
           command = "waybar";
         }
