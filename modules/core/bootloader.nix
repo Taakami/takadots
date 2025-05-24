@@ -4,5 +4,5 @@
         enable = true;
         device = "/dev/sda";
         useOSProber = true;
-    }
+    };
 }

@@ -8,6 +8,8 @@
     ./swaync.nix                # Notifications
     ./waybar.nix                # Status bar
   ];
-  programs.kitty.enable = true;
-  programs.git.enable = true;
+  programs = {
+    kitty.enable = true;
+    programs.git.enable = true;
+  };
 }
