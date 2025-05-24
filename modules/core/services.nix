@@ -1,4 +1,4 @@
-{ pkgs, username ... }:
+{ pkgs, username, ... }:
 {
   services = {
     gnome.gnome-keyring.enable = true;
