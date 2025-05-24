@@ -18,7 +18,7 @@
       startup = [
         { command = "autotiling-rs"; }
       ];
-      bars."*".command = "waybar";
+      bars.*.command = "waybar";
       gaps = {
         inner = 8;
         outer = 8;
