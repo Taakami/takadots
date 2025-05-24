@@ -22,7 +22,7 @@
       gaps = {
         inner = 8;
         outer = 8;
-      }
+      };
     };
     extraConfig = ''
       blur enable
