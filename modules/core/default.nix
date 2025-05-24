@@ -7,7 +7,7 @@
     ./network.nix
     ./packages.nix
     ./security.nix
-    ./servies.nix
+    ./services.nix
     # ./sway.nix
     ./thunar.nix
     ./user.nix
