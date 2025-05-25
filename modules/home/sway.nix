@@ -15,11 +15,10 @@
       };
       modifier = "Mod4";
       # Use kitty as default terminal
-      terminal = "kitty";
+      terminal = "alacritty";
       menu = "rofi -show drun";
       startup = [
         { command = "autotiling-rs"; }
-        { command = "kitty"; }
       ];
       bars = [
         {
