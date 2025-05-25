@@ -5,11 +5,10 @@
     greetd = {
       enable = true;
       settings = rec {
-        initial_session = {
+        default_session = {
           command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --cmd sway ";
           user = "${username}";
         };
-        default_session = initial_session;
       };
     };
     pipewire = {

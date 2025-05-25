@@ -1,15 +1,11 @@
 { ... }:
 {
   imports = [
+    ./discord.nix               # Discord
+    ./programs.nix              # Programs
     ./rofi.nix                  # App launcher
     ./sway.nix                  # Window manager
-    ./zen-browser.nix           # Browser
-    ./discord.nix               # Discord
     ./swaync.nix                # Notifications
     ./waybar.nix                # Status bar
+    ./zen-browser.nix           # Browser
   ];
-  programs = {
-    kitty.enable = true;
-    git.enable = true;
-  };
-}
