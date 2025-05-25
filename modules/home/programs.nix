@@ -9,9 +9,9 @@
             size = 16;
         };
     };
-    alacritty = {
-        enable = true;
-    };
+    alacritty.enable = true;
+    vscode.enable = true;
+    micro.enable = true;
     git.enable = true;
   };
 }
