@@ -1,6 +1,7 @@
 { pkgs, username, ... }:
 {
   services = {
+    xserver.xkb.layout = "fr";
     gnome.gnome-keyring.enable = true;
     greetd = {
       enable = true;

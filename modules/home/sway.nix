@@ -10,6 +10,7 @@
     package = pkgs.swayfx;
     checkConfig = false;
     config = rec {
+      defaultWorkspace = "workspace number 1";
       input."*" = {
           xkb_layout = "fr";
       };
@@ -19,6 +20,7 @@
       menu = "rofi -show drun";
       startup = [
         { command = "autotiling-rs"; }
+        { command = "swww-daemon"; }
       ];
       bars = [
         {
