@@ -30,7 +30,10 @@
         inner = 8;
         outer = 8;
       };
-      keybindings = lib.mkOptionDefault {
+      keybindings = 
+        let
+        modifier = config.wayland.windowManager.sway.config.modifier;
+        in lib.mkOptionDefault {
         # Switch to workspace
         "${modifier}+ampersand" = "workspace number 1";
         "${modifier}+eacute" = "workspace number 2";
