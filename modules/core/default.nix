@@ -18,10 +18,7 @@
     "nix-command"
     "flakes"
   ];
-  console = {
-      keyMap = "fr";
-      font = "JetBrainsMono Nerd Font";
-  };
+  console.keyMap = "fr";
 
   environment.systemPackages = with pkgs; [
     grim # screenshot functionality
