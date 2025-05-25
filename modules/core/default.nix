@@ -19,7 +19,7 @@
     "flakes"
   ];
   console = {
-      keymap = "fr";
+      keyMap = "fr";
       font = "JetBrainsMono Nerd Font";
   };
 
