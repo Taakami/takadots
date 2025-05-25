@@ -9,3 +9,4 @@
     ./waybar.nix                # Status bar
     ./zen-browser.nix           # Browser
   ];
+}
