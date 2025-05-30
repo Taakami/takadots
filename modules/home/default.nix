@@ -6,6 +6,7 @@
     ./rofi.nix                  # App launcher
     ./sway.nix                  # Window manager
     ./swaync.nix                # Notifications
+    ./swww.nix                  # Wallpaper manager
     ./waybar.nix                # Status bar
     ./zen-browser.nix           # Browser
   ];

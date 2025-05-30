@@ -1,9 +1,10 @@
 { pkgs, ... }:
 {
     environment.systemPackages = with pkgs; [
-        pulseaudioFull
+        pavucontrol
         networkmanagerapplet
         nodejs
         pnpm
+        git
     ];
 }

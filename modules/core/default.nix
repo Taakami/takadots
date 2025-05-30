@@ -8,7 +8,6 @@
     ./packages.nix
     ./security.nix
     ./services.nix
-    # ./sway.nix
     ./thunar.nix
     ./user.nix
   ];
@@ -29,6 +28,7 @@
   ];
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
+    jetbrains-mono
     nerd-fonts.symbols-only
     twemoji-color-font
     noto-fonts-emoji

@@ -20,7 +20,9 @@
       menu = "rofi -show drun";
       startup = [
         { command = "autotiling-rs"; }
+        { command = "swaync"; }
         { command = "swww-daemon"; }
+        { command = "swww img ~/Pictures/background.png"; }
       ];
       bars = [
         {
@@ -53,6 +55,8 @@
         "${modifier}+Shift+underscore" = "move container to workspace number 8";
         "${modifier}+Shift+ccedilla" = "move container to workspace number 9";
         "${modifier}+Shift+agrave" = "move container to workspace number 10";
+
+        "${modifier}+Shift+n" = "exec swaync-client -t -sw";
       };
     };
     extraConfig = ''
