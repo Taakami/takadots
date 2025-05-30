@@ -25,7 +25,7 @@
         backlight = {
           on-click = "brightnessctl set +10%";
           on-click-right = "brightnessctl set 10%-";
-        }
+        };
       };
     };
   };
