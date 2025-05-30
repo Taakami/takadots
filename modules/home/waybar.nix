@@ -17,7 +17,7 @@
         };
         pulseaudio = {
           on-click = "pavucontrol";
-        }
+        };
         network = {
           on-click = "networkmanagerapplet";
           format-wifi = "{essid} ({signalStrength}%)";
