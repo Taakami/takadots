@@ -21,7 +21,7 @@
       startup = [
         { command = "autotiling-rs"; }
         { command = "swaync"; }
-        { command = "swww-daemon"; }
+        { command = "swww-daemon --format xrgb"; }
         { command = "swww img ~/Pictures/background.png"; }
       ];
       bars = [
