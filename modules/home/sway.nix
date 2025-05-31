@@ -27,7 +27,7 @@
       window = {
         border = 1;
         titlebar = false;
-      }
+      };
       bars = [
         {
           command = "waybar";
