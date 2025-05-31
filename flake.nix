@@ -28,11 +28,10 @@
           inherit system;
           modules = [ 
             ./hosts/mars
-            inputs.home-manager.nixosModules.home-manager
-           ];
+          ];
           specialArgs = {
             host = "mars";
-            inherit self inputs username nix-colors;
+            inherit self inputs username;
           };
         };
     };
