@@ -61,6 +61,11 @@
         "${modifier}+Shift+agrave" = "move container to workspace number 10";
 
         "${modifier}+Shift+n" = "exec swaync-client -t -sw";
+        # Sound
+        "XF86AudioRaiseVolume" = "wpctl set-volume @DEFAULT_AUDIO_SINK@ +5%";
+        "XF86AudioLowerVolume" = "wpctl set-volume @DEFAULT_AUDIO_SINK@ -5%";
+        "XF86AudioMute" = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
+
       };
     };
     extraConfig = ''

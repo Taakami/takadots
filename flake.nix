@@ -39,7 +39,7 @@
           host = "mars";
           inherit username inputs;
         };
-        modules = [ ./modules/core/user.nix ];
+        modules = [ ./home-manager/home.nix ];
       };
     };
   };
