@@ -25,22 +25,15 @@
     nixosConfigurations = {
       mars = nixpkgs.lib.nixosSystem {
           inherit system;
-          modules = [ ./hosts/mars ];
+          modules = [ 
+            ./hosts/mars
+            inputs.home-manager.nixosModules.home-manager
+           ];
           specialArgs = {
             host = "mars";
             inherit self inputs username;
           };
         };
-    };
-    homeConfigurations = {
-      "${username}@mars" = inputs.home-manager.lib.homeManagerConfiguration {
-        pkgs = pkgs;
-        extraSpecialArgs = {
-          host = "mars";
-          inherit username inputs;
-        };
-        modules = [ ./home-manager/home.nix ];
-      };
     };
   };
 }
