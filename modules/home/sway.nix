@@ -22,8 +22,12 @@
         { command = "autotiling-rs"; }
         { command = "swaync"; }
         { command = "swww-daemon --format xrgb"; }
-        { command = "swww img ~/Pictures/background.png"; }
+        # { command = "swww img ~/Pictures/background.png"; }
       ];
+      window = {
+        border = 1;
+        titlebar = false;
+      }
       bars = [
         {
           command = "waybar";
@@ -31,7 +35,7 @@
       ];
       gaps = {
         inner = 8;
-        outer = 8;
+        outer = 4;
       };
       keybindings = lib.mkOptionDefault {
         # Switch to workspace

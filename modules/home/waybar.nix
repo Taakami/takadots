@@ -6,7 +6,7 @@
         mainBar = {
         layer = "top";
         position = "top";
-        modules-left = [ "sway/workspaces" ];
+        modules-left = [ "sway/workspaces" "sway/mode" ];
         modules-center = [ "sway/window" ];
         modules-right = [ "pulseaudio" "battery" "clock" "backlight" "network" ];
         clock = {
@@ -14,6 +14,17 @@
         };
         "sway/workspaces" = {
           all-outputs = true;
+          persistant_workspaces = {
+            "1" = [];
+            "2" = [];
+            "3" = [];
+            "4" = [];
+            "5" = [];
+            "6" = [];
+            "7" = [];
+            "8" = [];
+            "9" = [];
+          }
         };
         pulseaudio = {
           on-click = "pavucontrol";

@@ -9,7 +9,6 @@
     };
     # nur.url = "github:nix-community/NUR";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    # swww.url = "github:LGFae/swww";
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
@@ -32,6 +31,16 @@
             inherit self inputs username;
           };
         };
+    };
+    homeConfigurations = {
+      "${username}@mars" = inputs.home-manager.lib.homeManagerConfiguration {
+        pkgs = pkgs;
+        extraSpecialArgs = {
+          host = "mars";
+          inherit username inputs;
+        };
+        modules = [ ./modules/core/user.nix ];
+      };
     };
   };
 }

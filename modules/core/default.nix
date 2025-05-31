@@ -11,7 +11,6 @@
     ./thunar.nix
     ./user.nix
   ];
-  nixpkgs.config.allowUnfree = true;
   system.stateVersion = "25.05";
   nix.settings.experimental-features = [
     "nix-command"
@@ -25,6 +24,7 @@
     wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
     autotiling-rs
     brightnessctl
+    wev
   ];
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
