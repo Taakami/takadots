@@ -9,6 +9,7 @@
     };
     # nur.url = "github:nix-community/NUR";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    nix-colors.url = "github:misterio77/nix-colors";
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
@@ -31,7 +32,7 @@
            ];
           specialArgs = {
             host = "mars";
-            inherit self inputs username;
+            inherit self inputs username nix-colors;
           };
         };
     };

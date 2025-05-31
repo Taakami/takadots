@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 {
   programs.waybar = {
     enable = true;
@@ -34,10 +34,23 @@
           format-wifi = "{essid} ({signalStrength}%)";
         };
         backlight = {
-          on-click = "brightnessctl set +10%";
-          on-click-right = "brightnessctl set 10%-";
+          on-click = "brightnessctl set +5%";
+          on-click-right = "brightnessctl set 5%-";
         };
       };
     };
+    style = ''
+      * {
+        border: none;
+        border-radius: 0;
+        background: transparent;
+      }
+      window#waybar {
+        padding: 5px;
+      }
+      #workspaces button {
+        border-radius: 4px;
+      }
+    '';
   };
 }

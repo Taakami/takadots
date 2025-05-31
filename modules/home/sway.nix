@@ -62,15 +62,15 @@
 
         "${modifier}+Shift+n" = "exec swaync-client -t -sw";
         # Sound
-        "XF86AudioRaiseVolume" = "wpctl set-volume @DEFAULT_AUDIO_SINK@ +5%";
-        "XF86AudioLowerVolume" = "wpctl set-volume @DEFAULT_AUDIO_SINK@ -5%";
-        "XF86AudioMute" = "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
+        "XF86AudioRaiseVolume" = "exec wpctl set-volume @DEFAULT_AUDIO_SINK@ +5%";
+        "XF86AudioLowerVolume" = "exec wpctl set-volume @DEFAULT_AUDIO_SINK@ -5%";
+        "XF86AudioMute" = "exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
 
       };
     };
     extraConfig = ''
       blur enable
-      corner_radius 4
+      corner_radius 8
     '';
   };
 }

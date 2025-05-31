@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./colors.nix                # Color scheme
     ./discord.nix               # Discord
     ./editor.nix                # Text editors
     ./programs.nix              # Programs
