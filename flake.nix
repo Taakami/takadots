@@ -20,7 +20,8 @@
         inherit system;
         config.allowUnfree = true;
       };
-       lib = nixpkgs.lib;
+      lib = nixpkgs.lib;
+      colorScheme = nix-colors.lib.schemeFromYAML "takami" (builtins.readFile ./assets/color-scheme.yaml);
     in
     {
     nixosConfigurations = {
@@ -31,7 +32,7 @@
           ];
           specialArgs = {
             host = "mars";
-            inherit self inputs username;
+            inherit self inputs username colorScheme;
           };
         };
     };

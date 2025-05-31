@@ -1,4 +1,4 @@
-{ config,... }:
+{ colorScheme,... }:
 {
   programs = {
     kitty = {
@@ -27,40 +27,40 @@
         };
         colors = {
           primary = {
-            background = "#${config.colorScheme.palette.base00}";
-            foreground = "#${config.colorScheme.palette.base05}";
+            background = "#${colorScheme.palette.base00}";
+            foreground = "#${colorScheme.palette.base05}";
           };
           cursor = {
-            text = "#${config.colorScheme.palette.base00}";
-            cursor = "#${config.colorScheme.palette.base05}";
+            text = "#${colorScheme.palette.base00}";
+            cursor = "#${colorScheme.palette.base05}";
           };
           normal = {
-            black = "#${config.colorScheme.palette.base01}";
-            red = "#${config.colorScheme.palette.base08}";
-            green = "#${config.colorScheme.palette.base0B}";
-            yellow = "#${config.colorScheme.palette.base0A}";
-            blue = "#${config.colorScheme.palette.base0D}";
-            magenta = "#${config.colorScheme.palette.base0E}";
-            cyan = "#${config.colorScheme.palette.base0C}";
-            white = "#${config.colorScheme.palette.base05}";
+            black = "#${colorScheme.palette.base01}";
+            red = "#${colorScheme.palette.base08}";
+            green = "#${colorScheme.palette.base0B}";
+            yellow = "#${colorScheme.palette.base0A}";
+            blue = "#${colorScheme.palette.base0D}";
+            magenta = "#${colorScheme.palette.base0E}";
+            cyan = "#${colorScheme.palette.base0C}";
+            white = "#${colorScheme.palette.base05}";
           };
           bright = {
-            black = "#${config.colorScheme.palette.base02}";
-            red = "#${config.colorScheme.palette.base08}";
-            green = "#${config.colorScheme.palette.base0B}";
-            yellow = "#${config.colorScheme.palette.base0A}";
-            blue = "#${config.colorScheme.palette.base0D}";
-            magenta = "#${config.colorScheme.palette.base0E}";
-            cyan = "#${config.colorScheme.palette.base0C}";
-            white = "#${config.colorScheme.palette.base07}";
+            black = "#${colorScheme.palette.base02}";
+            red = "#${colorScheme.palette.base08}";
+            green = "#${colorScheme.palette.base0B}";
+            yellow = "#${colorScheme.palette.base0A}";
+            blue = "#${colorScheme.palette.base0D}";
+            magenta = "#${colorScheme.palette.base0E}";
+            cyan = "#${colorScheme.palette.base0C}";
+            white = "#${colorScheme.palette.base07}";
           };
           indexed_colors = [
-            { index = 16; color = "#${config.colorScheme.palette.base09}"; }
-            { index = 17; color = "#${config.colorScheme.palette.base0F}"; }
-            { index = 18; color = "#${config.colorScheme.palette.base01}"; }
-            { index = 19; color = "#${config.colorScheme.palette.base02}"; }
-            { index = 20; color = "#${config.colorScheme.palette.base04}"; }
-            { index = 21; color = "#${config.colorScheme.palette.base06}"; }
+            { index = 16; color = "#${colorScheme.palette.base09}"; }
+            { index = 17; color = "#${colorScheme.palette.base0F}"; }
+            { index = 18; color = "#${colorScheme.palette.base01}"; }
+            { index = 19; color = "#${colorScheme.palette.base02}"; }
+            { index = 20; color = "#${colorScheme.palette.base04}"; }
+            { index = 21; color = "#${colorScheme.palette.base06}"; }
           ];
         };
       };
