@@ -1,4 +1,4 @@
-{ config, ... }:
+{ colorScheme, ... }:
 {
   programs.waybar = {
     enable = true;
@@ -26,6 +26,12 @@
             "9" = [];
           };
         };
+        battery = {
+          states = {
+            warning = 30;
+            critical = 15;
+          };
+        };
         pulseaudio = {
           on-click = "pavucontrol";
         };
@@ -44,11 +50,50 @@
         border: none;
         border-radius: 0;
         background: transparent;
+        color: #${colorScheme.palette.base05};
       }
       window#waybar {
         padding: 5px;
       }
       #workspaces button {
+        background-color: #${colorScheme.palette.base00};
+        border-radius: 4px;
+      }
+      #workspaces button.focused {
+        background-color: #${colorScheme.palette.base0D};
+      }
+      #window {
+        background-color: #${colorScheme.palette.base00};
+        border-radius: 4px;
+      }
+      #mode {
+        background-color: #${colorScheme.palette.base00};
+        border-radius: 4px;
+      }
+      #pulseaudio {
+        background-color: #${colorScheme.palette.base00};
+        border-radius: 4px;
+      }
+      #battery {
+        background-color: #${colorScheme.palette.base00};
+        border-radius: 4px;
+      }
+      #battery.warning {
+        background-color: #${colorScheme.palette.base0A};
+      }
+      #battery.critical {
+        background-color: #${colorScheme.palette.base08};
+      }
+      #clock {
+        background-color: #${colorScheme.palette.base00};
+        border-radius: 4px;
+      }
+      #backlight {
+        background-color: #${colorScheme.palette.base00};
+        border-radius: 4px;
+      }
+      #network {
+        background-color: #${colorScheme.palette.base00};
         border-radius: 4px;
       }
     '';
