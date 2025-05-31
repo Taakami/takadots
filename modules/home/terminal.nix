@@ -25,7 +25,7 @@
             family = "JetBrains Mono";
             size = 16;
           };
-        }
+        };
       };
     };
   };
