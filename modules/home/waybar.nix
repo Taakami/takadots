@@ -24,7 +24,7 @@
             "7" = [];
             "8" = [];
             "9" = [];
-          }
+          };
         };
         pulseaudio = {
           on-click = "pavucontrol";
