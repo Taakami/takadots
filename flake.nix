@@ -12,7 +12,7 @@
     nix-colors.url = "github:misterio77/nix-colors";
   };
 
-  outputs = { self, nixpkgs, ... }@inputs:
+  outputs = { self, nixpkgs, nix-colors, ... }@inputs:
     let 
       username = "taka";
       system = "x86_64-linux";
