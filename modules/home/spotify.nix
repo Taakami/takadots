@@ -10,7 +10,6 @@ in {
     enable = true;
     experimentalFeatures = true;
     wayland = true;
-    colorScheme = "mocha";
     enabledExtensions = with spicePkgs.extensions; [
       adblockify
       keyboardShortcut
