@@ -24,14 +24,17 @@
           };
         };
         pulseaudio = {
+          format = "{icon} {volume}%";
+          format-icons = [ "" "" "" "" ];
           on-click = "pavucontrol";
         };
         battery = {
+          format = "{icon} {capacity}%";
+          format-icons = ["" "" "" "" ""];
           states = {
             warning = 30;
             critical = 15;
           };
-          format-icons = ["" "" "" "" ""];
         };
         clock = {
           timezone = "Europe/Paris";
@@ -39,7 +42,7 @@
           on-click = "gnome-calendar";
         };
         backlight = {
-          format = "{icon} {percentage}%";
+          format = "{icon} {percent}%";
           format-icons = [ "" "" ];
         };
         network = {
@@ -59,12 +62,12 @@
         font-weight: bold;
         font-size: 12px;
         transition: background 300ms ease-out, color 300ms ease-out;
-        color: ${colorScheme.base05};
         box-shadow: none;
         text-shadow: none;
       }
       window#waybar {
         background: none;
+        color: ${colorScheme.base05};
       }
       #workspaces {
         margin-top: 8px;
@@ -106,6 +109,10 @@
       }
       #battery.critical {
         background-color: ${colorScheme.base08};
+        color: ${colorScheme.base00};
+      }
+      #pulseaudio.muted {
+        background-color: ${colorScheme.base0A};
         color: ${colorScheme.base00};
       }
       #network {

@@ -19,6 +19,6 @@ in {
       oneko
       # declutterNowPlayingBar
     ];
-    theme = spicePkgs.themes.hazy;
+    # theme = spicePkgs.themes.hazy;
   };
 }
