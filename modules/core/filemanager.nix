@@ -9,5 +9,5 @@
     };
     programs.yazi = {
         enable = true;
-    }
+    };
 }
