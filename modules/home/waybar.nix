@@ -102,9 +102,11 @@
       }
       #battery.warning {
         background-color: ${colorScheme.base0A};
+        color: ${colorScheme.base00};
       }
       #battery.critical {
         background-color: ${colorScheme.base08};
+        color: ${colorScheme.base00};
       }
       #network {
         margin-left: 8px;
