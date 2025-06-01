@@ -93,14 +93,14 @@
         background-color: #${colorScheme.base0D};
         color: #${colorScheme.base00};
       }
-      #battery {
-        margin-left: 8px;
-      }
       #battery.warning {
         background-color: #${colorScheme.base0A};
       }
       #battery.critical {
         background-color: #${colorScheme.base08};
+      }
+      #network {
+        margin-left: 8px;
       }
     '';
   };
