@@ -31,7 +31,7 @@
             warning = 30;
             critical = 15;
           };
-          format-icons = ["", "", "", "", ""];
+          format-icons = ["" "" "" "" ""];
         };
         clock = {
           timezone = "Europe/Paris";
@@ -40,7 +40,7 @@
         };
         backlight = {
           format = "{icon} {percentage}%";
-          format-icons = [ "", "" ];
+          format-icons = [ "" "" ];
         };
         network = {
           format-wifi = " {essid} ({signalStrength}%)";
