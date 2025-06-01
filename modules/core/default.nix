@@ -2,13 +2,14 @@
 {
   imports = [
     ./bootloader.nix
+    ./filemanager.nix
     ./hardware.nix
     ./i18n.nix
     ./network.nix
     ./packages.nix
+    ./programs.nix
     ./security.nix
     ./services.nix
-    ./thunar.nix
     ./user.nix
   ];
   nixpkgs.config.allowUnfree = true;
