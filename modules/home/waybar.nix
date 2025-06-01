@@ -54,7 +54,7 @@
         font-weight: bold;
         font-size: 12px;
         transition: background 300ms ease-out, color 300ms ease-out;
-        color: #${colorScheme.base05};
+        color: ${colorScheme.base05};
         box-shadow: none;
         text-shadow: none;
       }
@@ -65,7 +65,7 @@
         margin-top: 8px;
         margin-left: 8px;
         margin-right: 4px;
-        background-color: #${colorScheme.base01};
+        background-color: ${colorScheme.base01};
         border-radius: 8px;
         padding: 4px;
       }
@@ -76,13 +76,13 @@
         margin-right: 4px;
       }
       #workspaces button.focused {
-        background-color: #${colorScheme.base0D};
-        color: #${colorScheme.base00};
+        background-color: ${colorScheme.base0D};
+        color: ${colorScheme.base00};
       }
       #window, #mode, #pulseaudio, #battery, #clock, #backlight, #network {
         margin-top: 8px;
         margin-right: 4px;
-        background-color: #${colorScheme.base00};
+        background-color: ${colorScheme.base00};
         border-radius: 8px;
       }
       #workspaces button:hover,
@@ -90,14 +90,14 @@
       #pulseaudio:hover,
       #backlight:hover,
       #network:hover {
-        background-color: #${colorScheme.base0D};
-        color: #${colorScheme.base00};
+        background-color: ${colorScheme.base0D};
+        color: ${colorScheme.base00};
       }
       #battery.warning {
-        background-color: #${colorScheme.base0A};
+        background-color: ${colorScheme.base0A};
       }
       #battery.critical {
-        background-color: #${colorScheme.base08};
+        background-color: ${colorScheme.base08};
       }
       #network {
         margin-left: 8px;
