@@ -9,9 +9,6 @@
         modules-left = [ "sway/workspaces" "sway/mode" ];
         modules-center = [ "sway/window" ];
         modules-right = [ "pulseaudio" "battery" "clock" "backlight" "network" ];
-        clock = {
-          timezone = "Europe/Paris";
-        };
         "sway/workspaces" = {
           all-outputs = true;
           persistent-workspaces = {
@@ -26,22 +23,30 @@
             "9" = [];
           };
         };
+        pulseaudio = {
+          on-click = "pavucontrol";
+        };
         battery = {
           states = {
             warning = 30;
             critical = 15;
           };
+          format-icons: ["", "", "", "", ""];
         };
-        pulseaudio = {
-          on-click = "pavucontrol";
-        };
-        network = {
-          on-click = "networkmanagerapplet";
-          format-wifi = "{essid} ({signalStrength}%)";
+        clock = {
+          timezone = "Europe/Paris";
+          format = " {:%H:%M}";
+          on-click = "gnome-calendar";
         };
         backlight = {
-          on-click = "brightnessctl set +5%";
-          on-click-right = "brightnessctl set 5%-";
+          format = "{icon} {percentage}%";
+          format-icons = [ "", "" ];
+        };
+        network = {
+          format-wifi = " {essid} ({signalStrength}%)";
+          format-disconnected = "󱘖";
+          on-click = "networkmanagerapplet";
+          tooltip-format = " {bandwidthUpBits} /  {bandwidthDownBits}";
         };
       };
     };
@@ -50,7 +55,7 @@
         min-height: 0;
         border: none;
         border-radius: 0;
-        font-family: "JetBrains Mono", monospace;
+        font-family: "JetBrains Mono", monospace, "Symbols Nerd Font";
         font-weight: bold;
         font-size: 12px;
         transition: background 300ms ease-out, color 300ms ease-out;
@@ -82,7 +87,9 @@
       #window, #mode, #pulseaudio, #battery, #clock, #backlight, #network {
         margin-top: 8px;
         margin-right: 4px;
-        background-color: ${colorScheme.base00};
+        padding-right: 4px;
+        padding-left: 4px;
+        background-color: ${colorScheme.base01};
         border-radius: 8px;
       }
       #workspaces button:hover,
