@@ -1,6 +1,7 @@
 { ... }:
 {
   imports = [
+    ./cursor.nix                # Cursor theme
     ./discord.nix               # Discord
     ./editor.nix                # Text editors
     ./programs.nix              # Programs

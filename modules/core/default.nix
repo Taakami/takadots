@@ -19,14 +19,6 @@
   ];
   console.keyMap = "fr";
 
-  environment.systemPackages = with pkgs; [
-    grim # screenshot functionality
-    slurp # screenshot functionality
-    wl-clipboard # wl-copy and wl-paste for copy/paste from stdin / stdout
-    autotiling-rs
-    brightnessctl
-    wev
-  ];
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     jetbrains-mono

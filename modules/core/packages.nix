@@ -8,5 +8,11 @@
         git                         # Version control system
         gnome-calendar              # Agenda
         adwaita-icon-theme          # Icon theme for GNOME
+        grim                        # screenshot functionality
+        slurp                       # screenshot functionality
+        wl-clipboard                # wl-copy and wl-paste for copy/paste from stdin / stdout
+        autotiling-rs
+        brightnessctl               # Backlight control
+        wev                         # Wayland event viewer
     ];
 }
