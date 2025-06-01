@@ -2,7 +2,7 @@
 {
   programs.zsh = {
     autosuggestion.enable = true;
-    syntaxHighlighting.enable;
+    syntaxHighlighting.enable = true;
     shellAliases = {
       nix-switch = "nh os switch";
       nix-update = "nh os switch --update";
