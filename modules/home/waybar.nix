@@ -82,6 +82,7 @@
         padding-right: 5px;
         border-radius: 8px;
         margin-right: 4px;
+        color: ${colorScheme.base05};
       }
       #workspaces button.focused {
         background-color: ${colorScheme.base0D};
