@@ -47,61 +47,60 @@
     };
     style = ''
       * {
+        min-height: 0;
         border: none;
         border-radius: 0;
-        background: transparent;
-        color: #${colorScheme.palette.base05};
+        font-family: "JetBrains Mono", monospace;
+        font-weight: bold;
+        font-size: 12px;
+        transition: background 300ms ease-out, color 300ms ease-out;
+        color: #${colorScheme.base05};
+        box-shadow: none;
+        text-shadow: none;
       }
       window#waybar {
-        margin: 5px;
+        background: none;
+      }
+      #workspaces {
+        margin-top: 8px;
+        margin-left: 8px;
+        margin-right: 4px;
+        background-color: #${colorScheme.base01};
+        border-radius: 8px;
+        padding: 4px;
       }
       #workspaces button {
-        background-color: #${colorScheme.palette.base00};
+        padding-left: 5px;
+        padding-right: 5px;
         border-radius: 8px;
         margin-right: 4px;
       }
       #workspaces button.focused {
-        background-color: #${colorScheme.palette.base0D};
-        color: #${colorScheme.palette.base00};
+        background-color: #${colorScheme.base0D};
+        color: #${colorScheme.base00};
       }
-      #window {
-        background-color: #${colorScheme.palette.base00};
-        border-radius: 8px;
-      }
-      #mode {
-        background-color: #${colorScheme.palette.base00};
-        border-radius: 8px;
-      }
-      #pulseaudio {
-        background-color: #${colorScheme.palette.base00};
-        border-radius: 8px;
+      #window, #mode, #pulseaudio, #battery, #clock, #backlight, #network {
+        margin-top: 8px;
         margin-right: 4px;
+        background-color: #${colorScheme.base00};
+        border-radius: 8px;
+      }
+      #workspaces button:hover,
+      #clock:hover,
+      #pulseaudio:hover,
+      #backlight:hover,
+      #network:hover {
+        background-color: #${colorScheme.base0D};
+        color: #${colorScheme.base00};
       }
       #battery {
-        background-color: #${colorScheme.palette.base00};
-        border-radius: 8px;
-        margin-right: 4px;
+        margin-left: 8px;
       }
       #battery.warning {
-        background-color: #${colorScheme.palette.base0A};
+        background-color: #${colorScheme.base0A};
       }
       #battery.critical {
-        background-color: #${colorScheme.palette.base08};
-      }
-      #clock {
-        background-color: #${colorScheme.palette.base00};
-        border-radius: 8px;
-        margin-right: 4px;
-      }
-      #backlight {
-        background-color: #${colorScheme.palette.base00};
-        border-radius: 8px;
-        margin-right: 4px;
-      }
-      #network {
-        background-color: #${colorScheme.palette.base00};
-        border-radius: 8px;
-        margin-right: 4px;
+        background-color: #${colorScheme.base08};
       }
     '';
   };
