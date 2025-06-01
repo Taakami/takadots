@@ -25,12 +25,15 @@
         };
         pulseaudio = {
           format = "{icon} {volume}%";
-          format-icons = [ "" "" "" "" ];
+          format-muted = "";
+          format-icons = [ "" "" "" ];
           on-click = "pavucontrol";
+          tooltip = false;
         };
         battery = {
           format = "{icon} {capacity}%";
           format-icons = ["" "" "" "" ""];
+          tooltip-format = "{time}";
           states = {
             warning = 30;
             critical = 15;
@@ -39,11 +42,13 @@
         clock = {
           timezone = "Europe/Paris";
           format = " {:%H:%M}";
+          tooltip-format = "{:%A, %d %B %Y}";
           on-click = "gnome-calendar";
         };
         backlight = {
           format = "{icon} {percent}%";
           format-icons = [ "" "" ];
+          tooltip = false;
         };
         network = {
           format-wifi = " {essid} ({signalStrength}%)";
@@ -67,6 +72,14 @@
       }
       window#waybar {
         background: none;
+        color: ${colorScheme.base05};
+      }
+      tooltip {
+        background-color: ${colorScheme.base01};
+        border-radius: 8px;
+        padding: 4px;
+      }
+      tooltip label {
         color: ${colorScheme.base05};
       }
       #workspaces {
