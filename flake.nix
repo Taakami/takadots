@@ -11,7 +11,7 @@
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
   };
 
-  outputs = { self, nixpkgs, nix-colors, ... }@inputs:
+  outputs = { self, nixpkgs, ... }@inputs:
     let 
       username = "taka";
       system = "x86_64-linux";
