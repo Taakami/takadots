@@ -7,6 +7,8 @@
       taka = {
         background = colorScheme.base00;
         foreground = colorScheme.base05;
+        selection-background = colorScheme.base02;
+        selection-foreground = colorScheme.base05;
         cursor-color = colorScheme.base05;
         palette = [
           "0=${colorScheme.base00}"
@@ -26,8 +28,6 @@
           "14=${colorScheme.base0E}"
           "15=${colorScheme.base0F}"
         ];
-        selection-background = colorScheme.base;
-        selection-foreground = colorScheme.base;
       };
     };
   };
