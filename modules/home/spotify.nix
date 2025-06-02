@@ -10,6 +10,7 @@ in {
     enable = true;
     experimentalFeatures = true;
     wayland = true;
+    windowManagerPatch = true;
     enabledExtensions = with spicePkgs.extensions; [
       adblockify
       keyboardShortcut
