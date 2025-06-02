@@ -1,6 +1,6 @@
 { colorScheme, ... }:
 {
-  services.ghostty = {
+  programs.ghostty = {
     enable = true;
     theme = "taka";
     themes = {
