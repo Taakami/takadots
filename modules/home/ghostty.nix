@@ -2,7 +2,9 @@
 {
   programs.ghostty = {
     enable = true;
-    theme = "taka";
+    settings = {
+      theme = "taka";
+    };
     themes = {
       taka = {
         background = colorScheme.base00;
