@@ -23,6 +23,7 @@
         { command = "autotiling-rs"; }
         { command = "swaync"; }
         { command = "swww-daemon --format xrgb"; }
+        { command = "walker --gapplication-service"; }
       ];
       window = {
         border = 1;
