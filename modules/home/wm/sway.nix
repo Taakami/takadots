@@ -11,7 +11,7 @@
     checkConfig = false;
     config = rec {
       defaultWorkspace = "workspace number 1";
-      {
+      fonts ={
         names = [ "JetBrains Mono" "monospace" ];
         style = "Bold Semi-Condensed";
         size = 11.0;
