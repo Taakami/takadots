@@ -4,7 +4,7 @@
     enable = true;
     package = pkgs.rofi-wayland;
     font = "JetBrains Mono 14";
-    terminal = pkgs.alacritty;
+    terminal = "alacritty";
     modes = [
       "window"
       "drun"
