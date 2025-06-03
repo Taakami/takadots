@@ -6,10 +6,10 @@
     font = "JetBrains Mono 14";
     terminal = pkgs.alacritty;
     modes = [
-      window
-      drun
-      run
-      calc
+      "window"
+      "drun"
+      "run"
+      "calc"
     ];
     plugins = with pkgs; [
       rofi-calc
