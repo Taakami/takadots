@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, lib, ... }:
 {
   imports = [ inputs.walker.homeManagerModules.default ];
   programs.walker = {
@@ -6,7 +6,7 @@
     runAsService = true;
 
     # All options from the config.json can be used here.
-    config = {
+    config = lib.mkOptionDefault {
       # search.placeholder = "Example";
       terminal = "alacritty";
       list = {
