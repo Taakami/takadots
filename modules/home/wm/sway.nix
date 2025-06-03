@@ -12,11 +12,15 @@
     checkConfig = false;
     config = rec {
       defaultWorkspace = "workspace number 1";
+      {
+        names = [ "JetBrains Mono" "monospace" ];
+        style = "Bold Semi-Condensed";
+        size = 11.0;
+      };
       input."*" = {
           xkb_layout = "fr";
       };
       modifier = "Mod4";
-      # Use kitty as default terminal
       terminal = "alacritty";
       menu = "rofi -show drun";
       startup = [
@@ -24,6 +28,7 @@
         { command = "swww-daemon --format xrgb"; }
         { command = "walker --gapplication-service"; }
       ];
+      workspaceAutoBackAndForth = true;
       window = {
         border = 1;
         titlebar = false;
@@ -76,6 +81,38 @@
         };
       };
       keybindings = lib.mkOptionDefault {
+        # Apps
+        "${modifier}+Return" = "exec ${terminal}";
+        "${modifier}+d" = "exec ${menu}";
+        "${modifier}+f" = "exec zen";
+        "${modifier}+Shift+n" = "exec swaync-client -t -sw";
+        "${modifier}+Shift+d" = "exec walker";
+
+        # System
+        "${modifier}+h" = "focus left";
+        "${modifier}+Left" = "focus left";
+        "${modifier}+j" = "focus down";
+        "${modifier}+Down" = "focus down";
+        "${modifier}+k" = "focus up";
+        "${modifier}+Up" = "focus up";
+        "${modifier}+l" = "focus right";
+        "${modifier}+Right" = "focus right";
+        "${modifier}+Shift+h" = "move left";
+        "${modifier}+Shift+Left" = "move left";
+        "${modifier}+Shift+j" = "move down";
+        "${modifier}+Shift+Down" = "move down";
+        "${modifier}+Shift+k" = "move up";
+        "${modifier}+Shift+Up" = "move up";
+        "${modifier}+Shift+l" = "move right";
+        "${modifier}+Shift+Right" = "move right";
+        "${modifier}+Shift+space" = "floating toggle";
+        "${modifier}+space" = "focus mode_toggle";
+        "${modifier}+Shift+f" = "fullscreen toggle";
+        "${modifier}+r" = "mode Resize";
+
+        "${modifier}+Shift+q" = "kill";
+        "${modifier}+Shift+c" = "reload";
+
         # Workspaces
         "${modifier}+ampersand" = "workspace number 1";
         "${modifier}+eacute" = "workspace number 2";
@@ -97,14 +134,28 @@
         "${modifier}+Shift+underscore" = "move container to workspace number 8";
         "${modifier}+Shift+ccedilla" = "move container to workspace number 9";
         "${modifier}+Shift+agrave" = "move container to workspace number 10";
+
         # Navigation
-        "${modifier}+Shift+n" = "exec swaync-client -t -sw";
-        "${modifier}+Shift+d" = "exec walker";
+        "${modifier}+Tab" = "workspace back_and_forth";
         # Sound
         "XF86AudioRaiseVolume" = "exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+";
         "XF86AudioLowerVolume" = "exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-";
         "XF86AudioMute" = "exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle";
 
+      };
+      modes = {
+        Resize = {
+          Escape = "mode default";
+          Return = "mode default";
+          h = "resize shrink width 10 px";
+          Left = "resize shrink width 10 px";
+          j = "resize grow height 10 px";
+          Down = "resize grow height 10 px";
+          k = "resize shrink height 10 px";
+          Up = "resize shrink height 10 px";
+          l = "resize grow width 10 px";
+          Right = "resize grow width 10 px";
+        };
       };
     };
     extraConfig = ''

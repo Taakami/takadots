@@ -7,7 +7,7 @@
         layer = "top";
         position = "top";
         modules-left = [ "sway/workspaces" "sway/mode" ];
-        modules-center = [ "sway/window" ];
+        modules-center = [ "custom/walker" "sway/window" ];
         modules-right = [ "pulseaudio" "battery" "clock" "backlight" "network" ];
         "sway/workspaces" = {
           all-outputs = true;
@@ -58,6 +58,11 @@
           on-click = "networkmanagerapplet";
           tooltip-format = " {bandwidthUpBits} /  {bandwidthDownBits}";
         };
+        "custom/walker" = {
+          format = "";
+          on-click = "walker";
+          tooltip = false;
+        }
       };
     };
     style = ''
@@ -103,7 +108,7 @@
         background-color: ${colorScheme.base0D};
         color: ${colorScheme.base00};
       }
-      #window, #mode, #pulseaudio, #battery, #clock, #backlight, #network {
+      #window, #mode, #pulseaudio, #battery, #clock, #backlight, #network, #custom-walker {
         margin-top: 8px;
         margin-right: 4px;
         padding-right: 4px;
@@ -115,7 +120,8 @@
       #clock:hover,
       #pulseaudio:hover,
       #backlight:hover,
-      #network:hover {
+      #network:hover,
+      #custom-walker:hover {
         background-color: ${colorScheme.base0D};
         color: ${colorScheme.base00};
       }

@@ -13,6 +13,11 @@
     ./cli/bat.nix               # cat replacement
     ./cli/btop.nix              # System monitor
     ./cli/eza.nix               # ls replacement
+    ./cli/fastfetch.nix         # Fastfetch system information tool
+    ./cli/fd.nix                # fd file finder
+    ./cli/fzf.nix               # Fuzzy finder
+    ./cli/has.nix               # Command line tool for checking if a command exists
+    ./cli/tldr.nix              # TLDR pages
 
     # Desktop
     ./desktop/cursor.nix        # Cursor theme for desktop
@@ -33,6 +38,7 @@
     ./launcher/walker.nix       # Walker application launcher
 
     # Shell
+    ./shell/thefuck.nix         # Thefuck command line tool
     ./shell/zsh.nix             # Zsh shell configuration
 
     # Terminals

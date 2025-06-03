@@ -2,17 +2,17 @@
 {
   imports = [ inputs.walker.homeManagerModules.default ];
   programs.walker = {
-  enable = true;
-  runAsService = true;
+    enable = true;
+    runAsService = true;
 
-  # All options from the config.json can be used here.
-  config = {
-    search.placeholder = "Example";
-    list = {
-      height = 200;
+    # All options from the config.json can be used here.
+    config = {
+      # search.placeholder = "Example";
+      list = {
+        height = 200;
+      };
+      websearch.prefix = "?";
+      switcher.prefix = "/";
     };
-    websearch.prefix = "?";
-    switcher.prefix = "/";
   };
-};
 }
