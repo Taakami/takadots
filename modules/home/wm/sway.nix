@@ -1,6 +1,5 @@
 {
   pkgs,
-  lib,
   colorScheme,
   ...
 }:
@@ -80,7 +79,7 @@
           text = colorScheme.base05;
         };
       };
-      keybindings = lib.mkOptionDefault {
+      keybindings = {
         # Apps
         "${modifier}+Return" = "exec ${terminal}";
         "${modifier}+d" = "exec ${menu}";

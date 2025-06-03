@@ -7,7 +7,7 @@
         layer = "top";
         position = "top";
         modules-left = [ "sway/workspaces" "sway/mode" ];
-        modules-center = [ "custom/walker" "sway/window" ];
+        modules-center = [ "sway/window" ];
         modules-right = [ "pulseaudio" "battery" "clock" "backlight" "network" ];
         "sway/workspaces" = {
           all-outputs = true;
@@ -22,6 +22,17 @@
             "8" = [];
             "9" = [];
           };
+        };
+        "sway/mode" = {
+          tooltip = false;
+        };
+        "sway/window" = {
+          on-click = "walker";
+          max-length = 50;
+          rewrite = {
+            "(.*) - Zen Browser": "🌍 • $1",
+            "(.*) - Visual Studio Code": "󰨞 • $1",
+          }
         };
         pulseaudio = {
           format = "{icon} {volume}%";
@@ -58,11 +69,6 @@
           on-click = "networkmanagerapplet";
           tooltip-format = " {bandwidthUpBits} /  {bandwidthDownBits}";
         };
-        "custom/walker" = {
-          format = "";
-          on-click = "walker";
-          tooltip = false;
-        }
       };
     };
     style = ''
