@@ -33,7 +33,9 @@
         battery = {
           format = "{icon} {capacity}%";
           format-icons = ["" "" "" "" ""];
-          tooltip-format = "{time}";
+          tooltip-format = "Temps restant : ~{time}";
+          format-charging = " {capacity}%";
+          tooltip-format-charging = "Temps de charge : ~{time}";
           states = {
             warning = 30;
             critical = 15;

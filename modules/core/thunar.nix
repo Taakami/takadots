@@ -7,7 +7,4 @@
             thunar-volman
         ];
     };
-    programs.yazi = {
-        enable = true;
-    };
 }

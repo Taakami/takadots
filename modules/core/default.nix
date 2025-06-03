@@ -2,7 +2,6 @@
 {
   imports = [
     ./bootloader.nix
-    ./filemanager.nix
     ./fonts.nix
     ./hardware.nix
     ./i18n.nix
@@ -13,6 +12,7 @@
     ./security.nix
     ./services.nix
     ./system.nix
+    ./thunar.nix
     ./user.nix
   ];
 }

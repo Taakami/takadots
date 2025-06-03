@@ -20,7 +20,6 @@
       terminal = "alacritty";
       menu = "rofi -show drun";
       startup = [
-        { command = "autotiling-rs"; }
         { command = "swaync"; }
         { command = "swww-daemon --format xrgb"; }
         { command = "walker --gapplication-service"; }
@@ -98,8 +97,9 @@
         "${modifier}+Shift+underscore" = "move container to workspace number 8";
         "${modifier}+Shift+ccedilla" = "move container to workspace number 9";
         "${modifier}+Shift+agrave" = "move container to workspace number 10";
-
+        # Navigation
         "${modifier}+Shift+n" = "exec swaync-client -t -sw";
+        "${modifier}+Shift+d" = "exec walker";
         # Sound
         "XF86AudioRaiseVolume" = "exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+";
         "XF86AudioLowerVolume" = "exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-";

@@ -7,7 +7,6 @@
 
   environment.systemPackages = with pkgs; [
     acpi
-    cpupower-gui
     powertop
   ];
 
@@ -21,7 +20,7 @@
       percentageAction = 3;
       criticalPowerAction = "PowerOff";
     };
-
+    tlp.enable = true;
     tlp.settings = {
       CPU_ENERGY_PERF_POLICY_ON_AC = "power";
       CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
@@ -49,14 +48,4 @@
 
   powerManagement.cpuFreqGovernor = "performance";
 
-  boot = {
-    kernelModules = [ "acpi_call" ];
-    extraModulePackages =
-      with config.boot.kernelPackages;
-      [
-        acpi_call
-        cpupower
-      ]
-      ++ [ pkgs.cpupower-gui ];
-  };
 }
