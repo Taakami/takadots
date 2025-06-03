@@ -30,8 +30,8 @@
           on-click = "walker";
           max-length = 50;
           rewrite = {
-            "(.*) - Zen Browser": "🌍 • $1",
-            "(.*) - Visual Studio Code": "󰨞 • $1",
+            "(.*) - Zen Browser" = "🌍 • $1",
+            "(.*) - Visual Studio Code" = "󰨞 • $1",
           }
         };
         pulseaudio = {
