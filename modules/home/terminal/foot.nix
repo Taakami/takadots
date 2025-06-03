@@ -3,7 +3,9 @@
   programs.foot = {
       enable = true;
       settings = {
+        main = {
         font = "JetBrains Mono:size=14";
+        };
         colors = {
           foreground = colorScheme.base05;
           background = colorScheme.base00;
