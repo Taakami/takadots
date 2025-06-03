@@ -32,7 +32,7 @@
           rewrite = {
             "(.*) - Zen Browser" = "🌍 • $1";
             "(.*) - Visual Studio Code" = "󰨞 • $1";
-          }
+          };
         };
         pulseaudio = {
           format = "{icon} {volume}%";
