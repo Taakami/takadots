@@ -11,7 +11,7 @@
   ];
 
   services = {
-    # power-profiles-daemon.enable = true;
+    power-profiles-daemon.enable = true;
 
     upower = {
       enable = true;
@@ -20,7 +20,7 @@
       percentageAction = 3;
       criticalPowerAction = "PowerOff";
     };
-    tlp.enable = true;
+    
     tlp.settings = {
       CPU_ENERGY_PERF_POLICY_ON_AC = "power";
       CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
