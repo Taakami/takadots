@@ -8,6 +8,7 @@
     # All options from the config.json can be used here.
     config = {
       # search.placeholder = "Example";
+      terminal = "alacritty";
       list = {
         height = 200;
       };
