@@ -1,7 +1,7 @@
-{ ... }:
+{ inputs, ... }:
 {
   programs.yazi = {
     enable = true;
-    package = yazi.packages.${pkgs.system}.default;
+    package = inputs.yazi.packages.${pkgs.system}.default;
   };
 }
