@@ -38,7 +38,7 @@
     ./launcher/walker.nix       # Walker application launcher
 
     # Shell
-    ./shell/thefuck.nix         # Thefuck command line tool
+    ./shell/pay-respects.nix         # pay-respects command line tool
     ./shell/zsh.nix             # Zsh shell configuration
 
     # Terminals
