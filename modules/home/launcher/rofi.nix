@@ -13,7 +13,6 @@
     ];
     plugins = with pkgs; [
       rofi-calc
-      rofi-bluetooth
       rofi-network-manager
     ];
   };

@@ -3,6 +3,7 @@
     environment.systemPackages = with pkgs; [
         pavucontrol                 # Volume control
         networkmanagerapplet        # Network manager applet
+        overskride                  # Bluetooth manager
         nodejs                      # Node.js runtime 
         pnpm                        # Package manager for Node.js
         git                         # Version control system
