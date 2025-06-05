@@ -1,6 +1,6 @@
 { ... }:
 {
   imports = [
-    ./wm/sway.nix               # Sway window manager
+    ./sway.nix               # Sway window manager
   ];
 }
