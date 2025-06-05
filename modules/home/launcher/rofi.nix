@@ -4,7 +4,7 @@
     enable = true;
     package = pkgs.rofi-wayland;
     font = "JetBrains Mono 14";
-    terminal = "alacritty";
+    terminal = "${pkgs.alacritty}/bin/alacritty";
     modes = [
       "window"
       "drun"
@@ -13,6 +13,8 @@
     ];
     plugins = with pkgs; [
       rofi-calc
+      rofi-bluetooth
+      rofi-network-manager
     ];
   };
 }

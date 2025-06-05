@@ -82,10 +82,10 @@
       keybindings = {
         # Apps
         "${modifier}+Return" = "exec ${terminal}";
-        "${modifier}+d" = "exec ${menu}";
+        "${modifier}+space" = "exec ${menu}";
         "${modifier}+f" = "exec zen";
         "${modifier}+Shift+n" = "exec swaync-client -t -sw";
-        "${modifier}+Shift+d" = "exec walker";
+        "${modifier}+d" = "exec walker";
 
         # System
         "${modifier}+h" = "focus left";
@@ -105,12 +105,16 @@
         "${modifier}+Shift+l" = "move right";
         "${modifier}+Shift+Right" = "move right";
         "${modifier}+Shift+space" = "floating toggle";
-        "${modifier}+space" = "focus mode_toggle";
+        "${modifier}+g" = "focus mode_toggle";
         "${modifier}+Shift+f" = "fullscreen toggle";
-        "${modifier}+r" = "mode Resize";
 
         "${modifier}+Shift+q" = "kill";
         "${modifier}+Shift+c" = "reload";
+
+        # Modes
+        "${modifier}+r" = "mode Resize";
+        "${modifier}+F4" = "mode Logout";
+        "${modifier}+Shift+a" = "mode Apps";
 
         # Workspaces
         "${modifier}+ampersand" = "workspace number 1";
@@ -154,6 +158,17 @@
           Up = "resize shrink height 10 px";
           l = "resize grow width 10 px";
           Right = "resize grow width 10 px";
+        };
+        Logout = {
+          Escape = "mode default";
+          Return = "mode default";
+          r = "exec systemctl reboot; mode default";
+          s = "exec systemctl poweroff; mode default";
+        };
+        Apps = {
+          Escape = "mode default";
+          Return = "mode default";
+          b = "exec rofi-bluetooth; mode default";
         };
       };
     };
