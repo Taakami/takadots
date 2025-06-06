@@ -44,6 +44,14 @@
         name = "Noto Color Emoji";
       };
     };
+    opacity = {
+      applications = 0.7;
+      desktop = 0.7;
+      popus = 0.5;
+      terminal = 0.5;
+    };
+    overlays.enable = true;
+    polarity = "dark";
     targets = {
       gtk.enable = true;
       xfce.enable = true;

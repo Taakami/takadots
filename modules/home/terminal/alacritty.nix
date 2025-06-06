@@ -5,18 +5,18 @@
     enable = true;
     settings = {
       window = {
-        opacity = 0.5;
+        # opacity = 0.5;
         blur = true;
         padding = {
           x = 8;
           y = 8;
         };
       };
-      font = {
-        normal = {
-          family = "JetBrains Mono";
-        };
-      };
+      # font = {
+      #   normal = {
+      #     family = "JetBrains Mono";
+      #   };
+      # };
       # colors = {
       #   primary = {
       #     background = colorScheme.base00;
