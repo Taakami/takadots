@@ -83,7 +83,6 @@
         # Apps
         "${modifier}+Return" = "exec ${terminal}";
         "${modifier}+space" = "exec ${menu}";
-        "${modifier}+f" = "exec zen";
         "${modifier}+Shift+n" = "exec swaync-client -t -sw";
         "${modifier}+d" = "exec walker";
 
@@ -108,7 +107,7 @@
         "${modifier}+g" = "focus mode_toggle";
         "${modifier}+Shift+f" = "fullscreen toggle";
 
-        "${modifier}+Shift+q" = "kill";
+        "${modifier}+q" = "kill";
         "${modifier}+Shift+c" = "reload";
 
         # Modes
@@ -169,6 +168,7 @@
           Escape = "mode default";
           Return = "mode default";
           b = "exec rofi-bluetooth; mode default";
+          f = "exec zen; mode default";
         };
       };
     };
