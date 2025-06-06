@@ -46,6 +46,6 @@
     targets = {
       gtk.enable = true;
       xfce.enable = true;
-    }
+    };
   };
 }
