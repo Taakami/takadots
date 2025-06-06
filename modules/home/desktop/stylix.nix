@@ -47,7 +47,7 @@
     opacity = {
       applications = 0.7;
       desktop = 0.7;
-      popus = 0.5;
+      popups = 0.5;
       terminal = 0.5;
     };
     overlays.enable = true;
