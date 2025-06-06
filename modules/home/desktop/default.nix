@@ -2,7 +2,8 @@
 {
   imports = [
     ./clipse.nix        # Clipboard history manager
-    ./cursor.nix        # Cursor theme for desktop
+    # ./cursor.nix        # Cursor theme for desktop
+    ./stylix.nix        # Stylix theme manager
     ./playerctl.nix     # Media player control
     ./swayimg.nix       # Swayimg image viewer
     ./swaync.nix        # Notifications

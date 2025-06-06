@@ -11,6 +11,7 @@
     ./gtrash.nix            # Trash management tool
     ./has.nix               # Command line tool for checking if a command exists
     ./jq.nix                # jq JSON processor
+    ./pastel.nix            # Color manipulation tool
     ./tldr.nix              # TLDR pages
     ./zoxide.nix            # Zoxide directory navigation tool
   ];
