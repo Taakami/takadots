@@ -13,8 +13,8 @@
       output = {
         LVDS-1 = {
           mode = "1366x768@60Hz";
-        }
-      }
+        };
+      };
       defaultWorkspace = "workspace number 1";
       fonts ={
         names = [ "JetBrains Mono" "monospace" ];
