@@ -10,7 +10,6 @@
   programs.vscode = {
     enable = true;
     profiles.${username} = {
-      
-    }
+    };
   };
 }
