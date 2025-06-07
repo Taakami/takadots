@@ -31,7 +31,7 @@
       startup = [
         { command = "swaync"; }
         { command = "swww-daemon --format xrgb"; }
-        { command = "walker --gapplication-service"; }
+        # { command = "walker --gapplication-service"; }
       ];
       workspaceAutoBackAndForth = true;
       window = {
@@ -90,7 +90,7 @@
         "${modifier}+Return" = "exec ${terminal}";
         "${modifier}+space" = "exec ${menu}";
         "${modifier}+Shift+n" = "exec swaync-client -t -sw";
-        "${modifier}+d" = "exec walker";
+        # "${modifier}+d" = "exec walker";
 
         # System
         "${modifier}+h" = "focus left";

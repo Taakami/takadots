@@ -9,6 +9,7 @@
     ./swaync.nix        # Notifications
     ./swww.nix          # Wallpaper
     ./waybar.nix        # Status bar
+    ./wob               # Overlay
     ./yazi.nix          # Yazi file manager
   ];
 }

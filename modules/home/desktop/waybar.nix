@@ -31,7 +31,6 @@
           tooltip = false;
         };
         "sway/window" = {
-          on-click = "walker";
           max-length = 50;
           rewrite = {
             "(.*) - Zen Browser" = " $1 • 🌍";
@@ -118,7 +117,7 @@
         background-color: @base0D;
         color: @base00;
       }
-      #window, #mode, #pulseaudio, #battery, #clock, #backlight, #network, #custom-walker {
+      #window, #mode, #pulseaudio, #battery, #clock, #backlight, #network {
         margin-top: 8px;
         margin-right: 4px;
         padding-right: 4px;
@@ -129,9 +128,7 @@
       #workspaces button:hover,
       #clock:hover,
       #pulseaudio:hover,
-      #backlight:hover,
-      #network:hover,
-      #custom-walker:hover {
+      #network:hover {
         background-color: @base0D;
         color: @base00;
       }

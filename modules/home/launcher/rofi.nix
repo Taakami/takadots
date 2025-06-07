@@ -16,5 +16,20 @@
       rofi-calc
       rofi-network-manager
     ];
+    extraConfig = {
+      show-icons = true;
+      drun = {
+        display-name = "";
+      };
+      window = {
+        display-name = "";
+      };
+      run = {
+        display-name = "";
+      };
+      calc = {
+        display-name = "";
+      }
+    };
   };
 }
