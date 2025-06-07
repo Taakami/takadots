@@ -1,7 +1,7 @@
 { inputs, config, pkgs, ... }:
 {
   imports = [
-    inputs.stylix.homeManagerModules.stylix
+    inputs.stylix.homeModules.stylix
   ];
   stylix = {
     enable = true;
