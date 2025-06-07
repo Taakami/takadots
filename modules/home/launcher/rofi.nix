@@ -18,18 +18,10 @@
     ];
     extraConfig = {
       show-icons = true;
-      "drun" = {
-        display-name = "";
-      };
-      "window" = {
-        display-name = "";
-      };
-      "run" = {
-        display-name = "";
-      };
-      "calc" = {
-        display-name = "";
-      };
+      "display-drun" = "";
+      "display-window" = "";
+      "display-run" = "";
+      "display-calc" = "";
     };
   };
 }
