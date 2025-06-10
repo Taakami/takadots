@@ -31,6 +31,7 @@
       startup = [
         { command = "swaync"; }
         { command = "swww-daemon --format xrgb"; }
+        { command = "clipse -listen"; }
         # { command = "walker --gapplication-service"; }
       ];
       workspaceAutoBackAndForth = true;
@@ -90,7 +91,9 @@
         "${modifier}+Return" = "exec ${terminal}";
         "${modifier}+space" = "exec ${menu}";
         "${modifier}+Shift+n" = "exec swaync-client -t -sw";
-        # "${modifier}+d" = "exec walker";
+        "${modifier}+d" = "exec sherlock";
+
+        "${modifier}+v" = "exec ${terminal} -e sh -c 'swaymsg floating enable, move position center; swaymsg resize set 80ppt 80ppt && clipse'";
 
         # System
         "${modifier}+h" = "focus left";

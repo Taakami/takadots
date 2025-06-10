@@ -15,6 +15,7 @@
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    sherlock.url = "github:Skxxtz/sherlock";
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
