@@ -7,4 +7,5 @@
   programs.sherlock = {
     enable = true;
     settings = null;
+  };
 }
