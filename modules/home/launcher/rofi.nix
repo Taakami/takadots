@@ -1,4 +1,4 @@
-{ pkgs, colorScheme, ... } :
+{ pkgs, ... } :
 {
   stylix.targets.rofi.enable = true;
   programs.rofi = {

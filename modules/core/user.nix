@@ -3,7 +3,6 @@
   inputs,
   username,
   host,
-  colorScheme,
   ...
 }:
 {
@@ -13,7 +12,7 @@
   home-manager = {
     useUserPackages = true;
     useGlobalPkgs = true;
-    extraSpecialArgs = { inherit inputs username host colorScheme; };
+    extraSpecialArgs = { inherit inputs username host; };
     users.${username} = {
       imports = [ ./../home ];
       home.username = "${username}";

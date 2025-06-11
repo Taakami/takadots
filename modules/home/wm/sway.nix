@@ -1,6 +1,5 @@
 {
   pkgs,
-  colorScheme,
   ...
 }:
 {
@@ -17,11 +16,6 @@
         };
       };
       defaultWorkspace = "workspace number 1";
-      # fonts ={
-      #   names = [ "JetBrains Mono" "monospace" ];
-      #   style = "Bold Semi-Condensed";
-      #   size = 11.0;
-      # };
       input."*" = {
           xkb_layout = "fr";
       };
@@ -48,44 +42,6 @@
         inner = 8;
         # outer = 4;
       };
-      # colors = {
-      #   background = colorScheme.base00;
-      #   focused = {
-      #     background = colorScheme.base00;
-      #     border = colorScheme.base0C;
-      #     childBorder = colorScheme.base0C;
-      #     indicator = colorScheme.base0C;
-      #     text = colorScheme.base05;
-      #   };
-      #   focusedInactive = {
-      #     background = colorScheme.base00;
-      #     border = colorScheme.base0B;
-      #     childBorder = colorScheme.base0B;
-      #     indicator = colorScheme.base0B;
-      #     text = colorScheme.base05;
-      #   };
-      #   unfocused = {
-      #     background = colorScheme.base00;
-      #     border = colorScheme.base0A;
-      #     childBorder = colorScheme.base0A;
-      #     indicator = colorScheme.base0A;
-      #     text = colorScheme.base05;
-      #   };
-      #   urgent = {
-      #     background = colorScheme.base00;
-      #     border = colorScheme.base08;
-      #     childBorder = colorScheme.base08;
-      #     indicator = colorScheme.base08;
-      #     text = colorScheme.base05;
-      #   };
-      #   placeholder = {
-      #     background = colorScheme.base00;
-      #     border = colorScheme.base02;
-      #     childBorder = colorScheme.base02;
-      #     indicator = colorScheme.base02;
-      #     text = colorScheme.base05;
-      #   };
-      # };
       keybindings = {
         # Apps
         "${modifier}+Return" = "exec ${terminal}";
