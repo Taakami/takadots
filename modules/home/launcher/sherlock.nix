@@ -10,5 +10,5 @@
   # };
   home.package = with pkgs; [
     sherlock-launcher
-  ]
+  ];
 }
