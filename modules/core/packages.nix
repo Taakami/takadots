@@ -14,6 +14,7 @@
         wl-clipboard                # wl-copy and wl-paste for copy/paste from stdin / stdout
         brightnessctl               # Backlight control
         wev                         # Wayland event viewer
-        oneko
+        # oneko
+        wayneko
     ];
 }

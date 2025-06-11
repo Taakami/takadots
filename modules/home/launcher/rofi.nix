@@ -4,7 +4,6 @@
   programs.rofi = {
     enable = true;
     package = pkgs.rofi-wayland;
-    # font = "JetBrains Mono 14";
     terminal = "${pkgs.alacritty}/bin/alacritty";
     modes = [
       "window"
@@ -22,6 +21,13 @@
       "display-window" = "";
       "display-run" = "";
       "display-calc" = "";
+    };
+    theme = let
+     inherit (config.lib.formats.rasi) mkLiteral;
+    in {
+      element-icon = {
+          size = mkLiteral "2.5em";
+      };
     };
   };
 }
