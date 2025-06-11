@@ -10,18 +10,15 @@
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
     # walker.url = "github:abenz1267/walker";
-    yazi ={
-      url = "github:sxyazi/yazi";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    yazi.url = "github:sxyazi/yazi";
     stylix = {
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    sherlock = {
-      url = "github:Skxxtz/sherlock";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    # sherlock = {
+    #   url = "github:Skxxtz/sherlock";
+    #   inputs.nixpkgs.follows = "nixpkgs";
+    # };
   };
 
   outputs = { self, nixpkgs, ... }@inputs:

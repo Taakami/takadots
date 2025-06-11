@@ -1,11 +1,14 @@
-{inputs, ...}:
+{inputs, pkgs, ...}:
 {
-  imports = [
-    inputs.sherlock.homeManagerModules.default
-  ];
+  # imports = [
+  #   inputs.sherlock.homeManagerModules.default
+  # ];
 
-  programs.sherlock = {
-    enable = true;
-    settings = null;
-  };
+  # programs.sherlock = {
+  #   enable = true;
+  #   settings = null;
+  # };
+  home.package = with pkgs; [
+    sherlock-launcher
+  ]
 }

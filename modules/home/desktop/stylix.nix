@@ -44,6 +44,12 @@
         name = "Noto Color Emoji";
       };
     };
+    iconTheme = {
+      enable = true;
+      package = pkgs.fluent-icon-theme;
+      light = "Fluent";
+      dark = "Fluent";
+    };
     opacity = {
       applications = 0.7;
       desktop = 0.7;
