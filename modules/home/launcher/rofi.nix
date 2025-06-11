@@ -1,4 +1,4 @@
-{ pkgs, config,  ... } :
+{ pkgs, config, lib  ... } :
 {
   stylix.targets.rofi.enable = true;
   programs.rofi = {
@@ -23,8 +23,8 @@
       "display-calc" = "";
     };
     theme =  let
-     inherit (config.lib.formats.rasi) mkLiteral;
-    in config.lib.mkAfter {
+     inherit (lib.formats.rasi) mkLiteral;
+      in lib.mkAfter {
       element-icon = {
           size = mkLiteral "2em";
       };
