@@ -8,7 +8,7 @@
   #   enable = true;
   #   settings = null;
   # };
-  home.package = with pkgs; [
+  home.packages = with pkgs; [
     sherlock-launcher
   ];
 }
