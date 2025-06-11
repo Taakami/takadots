@@ -23,7 +23,7 @@
       "display-calc" = "";
     };
     theme =  let
-     inherit (lib.formats.rasi) mkLiteral;
+     inherit (config.lib.formats.rasi) mkLiteral;
       in lib.mkAfter {
       element-icon = {
           size = mkLiteral "2em";
