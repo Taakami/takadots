@@ -22,11 +22,11 @@
       "display-run" = "";
       "display-calc" = "";
     };
-    theme = let
+    theme =  let
      inherit (config.lib.formats.rasi) mkLiteral;
-    in {
+    in config.lib.mkAfter {
       element-icon = {
-          size = mkLiteral "2.5em";
+          size = mkLiteral "2em";
       };
     };
   };
