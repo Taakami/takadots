@@ -9,17 +9,11 @@
     };
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
-    # walker.url = "github:abenz1267/walker";
     yazi.url = "github:sxyazi/yazi";
     stylix = {
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # sherlock = {
-    #   url = "github:Skxxtz/sherlock";
-    #   inputs.nixpkgs.follows = "nixpkgs";
-    # };
-    nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
@@ -41,16 +35,6 @@
         ];
         specialArgs = {
           host = "mars";
-          inherit self inputs username;
-        };
-      };
-      neptune = nixpkgs.lib.nixosSystem {
-        inherit system;
-        modules = [
-          ./hosts/neptune
-        ];
-        specialArgs = {
-          host = "neptune";
           inherit self inputs username;
         };
       };
