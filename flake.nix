@@ -47,11 +47,7 @@
       neptune = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
-          inputs.nixos-wsl.nixosModules.default
-          {
-            system.stateVersion = "24.05";
-            wsl.enable = true;
-          }
+          ./hosts/neptune
         ];
       };
     };

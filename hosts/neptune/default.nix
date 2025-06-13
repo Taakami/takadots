@@ -1,13 +1,14 @@
-{ pkgs, config, ... }:
+{ pkgs, config, username, ... }:
 {
+  imports = [
+    inputs.nixos-wsl.nixosModules.default
+  ];
   wsl = {
     enable = true;
-    defaultUser = "taka";
+    defaultUser = "${username}";
     useWindowsDriver = true;
   };
   environment.systemPackages = with pkgs; [
-    acpi
-    powertop
     neovim
     git
   ];
@@ -18,4 +19,13 @@
   };
   nixpkgs.config.allowUnfree = true;
   system.stateVersion = "25.05";
+  nix = {
+    settings = {
+      auto-optimise-store = true;
+      experimental-features = [
+        "nix-command"
+        "flakes"
+      ];
+    };
+  };
 }
