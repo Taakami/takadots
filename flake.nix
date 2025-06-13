@@ -19,6 +19,7 @@
     #   url = "github:Skxxtz/sherlock";
     #   inputs.nixpkgs.follows = "nixpkgs";
     # };
+    nixos-wsl.url = "github:nix-community/NixOS-WSL/main";
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
@@ -34,15 +35,25 @@
     {
     nixosConfigurations = {
       mars = nixpkgs.lib.nixosSystem {
-          inherit system;
-          modules = [ 
-            ./hosts/mars
-          ];
-          specialArgs = {
-            host = "mars";
-            inherit self inputs username;
-          };
+        inherit system;
+        modules = [ 
+          ./hosts/mars
+        ];
+        specialArgs = {
+          host = "mars";
+          inherit self inputs username;
         };
+      };
+      neptune = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [
+          inputs.nixos-wsl.nixosModules.default
+          {
+            system.stateVersion = "24.05";
+            wsl.enable = true;
+          }
+        ];
+      };
     };
   };
 
