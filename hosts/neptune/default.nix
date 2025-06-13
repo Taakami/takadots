@@ -1,4 +1,4 @@
-{ pkgs, config, username, inputs, ... }:
+{ pkgs, config, username, inputs, host, ... }:
 {
   imports = [
     inputs.nixos-wsl.nixosModules.default
@@ -28,4 +28,5 @@
       ];
     };
   };
+  networking.hostName = "${host}";
 }

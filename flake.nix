@@ -49,6 +49,10 @@
         modules = [
           ./hosts/neptune
         ];
+        specialArgs = {
+          host = "neptune";
+          inherit self inputs username;
+        };
       };
     };
   };
