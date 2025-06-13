@@ -9,6 +9,7 @@
     };
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     zen-browser.url = "github:0xc000022070/zen-browser-flake";
+    nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     yazi.url = "github:sxyazi/yazi";
     stylix = {
       url = "github:danth/stylix";
