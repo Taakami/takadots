@@ -24,8 +24,8 @@
           vscode-extensions.mikestead.dotenv
           vscode-extensions.vue.volar
           vscode-extensions.wix.vscode-import-cost
-          vscode-marketplace.google.geminicodeassist
-          vscode-marketplace.nuxtr.nuxtr-vscode
+          # vscode-marketplace.google.geminicodeassist
+          # vscode-marketplace.nuxtr.nuxtr-vscode
         ];
       };
       nix = {
