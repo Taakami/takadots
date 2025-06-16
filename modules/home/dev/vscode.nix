@@ -7,8 +7,6 @@
     enable = true;
     profileNames = [
       "default"
-      "nix"
-      "nuxt"
     ];
   };
   programs.vscode = {
@@ -28,11 +26,6 @@
           # vscode-marketplace.nuxtr.nuxtr-vscode
         ];
       };
-      nix = {
-      };
-      nuxt = {
-      };
     };
-    mutableExtensionsDir = true;
   };
 }

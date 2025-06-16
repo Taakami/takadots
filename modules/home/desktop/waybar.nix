@@ -43,7 +43,7 @@
         };
         pulseaudio = {
           format = "{icon} {volume}%";
-          format-muted = "";
+          format-muted = " {volume}%";
           format-icons = [ "" "" "" ];
           on-click = "pavucontrol";
           tooltip = false;
