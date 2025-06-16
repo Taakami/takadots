@@ -41,7 +41,7 @@
         format-icons = [ "" "" "" ];
         on-click = "pavucontrol";
         tooltip = true;
-        tooltip-format = "{volume}%"
+        tooltip-format = "{volume}%";
       };
       battery = {
         format = "{icon}";
