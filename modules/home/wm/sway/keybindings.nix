@@ -99,5 +99,5 @@
         f = "exec zen-beta; mode default";
       };
     };
-  }
+  };
 }
