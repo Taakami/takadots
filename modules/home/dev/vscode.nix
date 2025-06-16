@@ -1,8 +1,8 @@
 { username, pkgs, inputs, ... }:
 {
-  nixpkgs.overlays = [
-    inputs.nix-vscode-extensions.overlays.default
-  ];
+  # nixpkgs.overlays = [
+  #   inputs.nix-vscode-extensions.overlays.default
+  # ];
   stylix.targets.vscode = {
     enable = true;
     profileNames = [
