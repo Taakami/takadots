@@ -1,9 +1,5 @@
 { ... }:
 {
-  imports = [
-    ./style.nix
-    ./bars.nix
-  ];
   programs.waybar.settings = {
     mainBar = {
       layer = "top";

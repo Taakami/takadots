@@ -1,9 +1,5 @@
 { ... }:
 {
-  imports = [
-    ./style.nix
-    ./bars.nix
-  ];
   stylix.targets.waybar = {
     enable = true;
     addCss = false;
