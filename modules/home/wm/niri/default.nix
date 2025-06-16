@@ -3,5 +3,5 @@
   inputs,
   ...
 }: {
-  imports = [inputs.niri.homeModules.niri];
+  # imports = [inputs.niri.homeModules.niri];
 }
