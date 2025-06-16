@@ -14,6 +14,7 @@
     nix-vscode-extensions.url = "github:nix-community/nix-vscode-extensions";
     nixcord = {
       url = "github:kaylorben/nixcord";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
     stylix = {

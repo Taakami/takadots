@@ -15,24 +15,22 @@
     enable = true;
     profiles = {
       default = {
-      };
-      nix = {
         extensions = with pkgs; [
           vscode-extensions.bbenoist.nix
           vscode-extensions.kamadorueda.alejandra
-        ];
-      };
-      nuxt = {
-        extensions = with pkgs; [
           vscode-extensions.bradlc.vscode-tailwindcss
           vscode-extensions.dbaeumer.vscode-eslint
           vscode-extensions.usernamehw.errorlens
           vscode-extensions.mikestead.dotenv
           vscode-extensions.vue.volar
           vscode-extensions.wix.vscode-import-cost
-          vscode-marketplace.google.geminicodeassist
-          vscode-marketplace.nuxtr.nuxtr-vscode
+          # vscode-marketplace.google.geminicodeassist
+          # vscode-marketplace.nuxtr.nuxtr-vscode
         ];
+      };
+      nix = {
+      };
+      nuxt = {
       };
     };
     mutableExtensionsDir = true;
