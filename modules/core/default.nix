@@ -15,6 +15,6 @@
     ./system.nix
     ./thunar.nix
     ./user.nix
-    ./wm.nix
+    # ./wm.nix
   ];
 }
