@@ -4,6 +4,7 @@
     ./bluetooth.nix
     ./bootloader.nix
     ./fonts.nix
+    ./greeter.nix
     ./hardware.nix
     ./i18n.nix
     ./network.nix
