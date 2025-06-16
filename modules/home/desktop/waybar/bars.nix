@@ -36,19 +36,18 @@
         spacing = 4;
       };
       pulseaudio = {
-        format = "{icon}";
+        format = "{icon} {volume}%";
         format-muted = "";
         format-icons = [ "" "" "" ];
         on-click = "pavucontrol";
-        tooltip = true;
-        tooltip-format = "{volume}%";
+        tooltip = false;
       };
       battery = {
-        format = "{icon}";
+        format = "{icon} {capacity}%";
         format-icons = ["" "" "" "" ""];
-        tooltip-format = "{capacity}% \n Temps restant : ~{time}";
+        tooltip-format = "Temps restant : ~{time}";
         format-charging = "";
-        tooltip-format-charging = "{capacity}% \n Temps de charge : ~{time}";
+        tooltip-format-charging = "Temps de charge : ~{time}";
         states = {
           warning = 30;
           critical = 15;
@@ -61,15 +60,14 @@
         on-click = "gnome-calendar";
       };
       backlight = {
-        format = "{icon}";
+        format = "{icon} {percent}%";
         format-icons = [ "" "" ];
-        tooltip = true;
-        tooltip-format = "{percent}%";
+        tooltip = false;
       };
       network = {
-        format-wifi = "";
+        format-wifi = " {signalStrength}%";
         format-disconnected = "󱘖";
-        tooltip-format = "{essid} ({signalStrength}%) \n  {bandwidthUpBits} /  {bandwidthDownBits}";
+        tooltip-format = "󰴽 {essid}\n {bandwidthUpBits}\n {bandwidthDownBits}";
       };
     };
   };

@@ -10,6 +10,10 @@
           command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --cmd sway ";
           user = "${username}";
         };
+        niri = {
+          command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --cmd niri-session ";
+          user = "${username}";
+        }
       };
     };
     pipewire = {
