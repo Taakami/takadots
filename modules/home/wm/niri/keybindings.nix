@@ -72,8 +72,8 @@
 
     "Mod+Shift+Left".action = set-column-width "-10%";
     "Mod+Shift+Right".action = set-column-width "+10%";
-    "Mod+Shift+Down".action = set-column-height "-10%";
-    "Mod+Shift+Up".action = set-column-height "+10%";
+    "Mod+Shift+Down".action = set-window-height "-10%";
+    "Mod+Shift+Up".action = set-window-height "+10%";
     "Mod+Shift+H".action = set-window-width "-10%";
     "Mod+Shift+J".action = set-window-height "-10%";
     "Mod+Shift+K".action = set-window-height "+10%";
