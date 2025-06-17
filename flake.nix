@@ -43,7 +43,7 @@
       mars = nixpkgs.lib.nixosSystem {
         inherit system;
         modules = [
-          niri.nixosModules.niri
+          inputs.niri.nixosModules.niri
           ./hosts/mars
         ];
         specialArgs = {
