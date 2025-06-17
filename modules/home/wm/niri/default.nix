@@ -3,8 +3,29 @@
   inputs,
   ...
 }: {
-  imports = [inputs.niri.homeModules.niri];
+  imports = [
+    inputs.niri.homeModules.niri
+    ./keybindings.nix
+    ./style.nix
+  ];
   programs.niri = {
     enable = true;
+    settings = {
+      input = {
+        keyboard = {
+          numlock = true;
+          xkb = {
+            layout = "fr";
+          };
+        };
+        power-key-handling.enable = false;
+      };
+    };
+    spawn-at-startup = [
+      "waybar"
+      "swaync"
+      "swww-daemon --format xrgb"
+      "clipse -listen"
+    ]
   };
 }

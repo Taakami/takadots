@@ -7,10 +7,10 @@ let
 
     case "$choice" in
       sway)
-        exec ${pkgs.sway}/bin/sway
+        exec sway/bin/sway
         ;;
       niri)
-        exec ${pkgs.niri}/bin/niri-session
+        exec niri/bin/niri-session
         ;;
       *)
         echo "No valid session selected"

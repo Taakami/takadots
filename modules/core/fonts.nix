@@ -6,5 +6,7 @@
     nerd-fonts.symbols-only
     twemoji-color-font
     noto-fonts-emoji
+    maple-mono.variable
+    maple-mono.NF
   ];
 }
