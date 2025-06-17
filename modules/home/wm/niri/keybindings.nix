@@ -53,13 +53,13 @@
     "Mod+Ctrl+F".action = expand-column-to-available-width;
     "Mod+Ctrl+C".action = center-visible-columns;
 
-    "Mod+Down".action = focus-column-down;
+    "Mod+Down".action = focus-window-down;
     "Mod+Left".action = focus-column-left;
-    "Mod+Up".action = focus-column-up;
+    "Mod+Up".action = focus-window-up;
     "Mod+Right".action = focus-column-right;
     "Mod+H".action = move-column-left;
-    "Mod+J".action = move-column-down;
-    "Mod+K".action = move-column-up;
+    "Mod+J".action = move-window-down;
+    "Mod+K".action = move-window-up;
     "Mod+L".action = move-column-right;
     "Mod+Ctrl+Down".action = move-window-down;
     "Mod+Ctrl+Left".action = move-column-left;
