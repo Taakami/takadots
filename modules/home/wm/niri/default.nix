@@ -26,6 +26,6 @@
       "swaync"
       "swww-daemon --format xrgb"
       "clipse -listen"
-    ]
+    ];
   };
 }
