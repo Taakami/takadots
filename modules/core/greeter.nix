@@ -24,7 +24,7 @@ in
     enable = true;
     settings = rec {
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --cmd ${sessionChooser}";
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --cmd ${pkgs.niri}/bin/niri-session";
         user = "greeter"; # Or your username, but "greeter" is recommended
       };
     };
