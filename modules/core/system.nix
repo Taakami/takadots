@@ -1,6 +1,6 @@
 { pkgs, inputs, ... }:
 {
-  # imports = [ inputs.nix-gaming.nixosModules.default ];
+  imports = [ inputs.niri.nixosModules.niri ];
   nix = {
     settings = {
       auto-optimise-store = true;
@@ -24,5 +24,8 @@
   };
 
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.overlays = [
+    inputs.niri.overlays.niri
+  ]
   system.stateVersion = "25.05";
 }
