@@ -1,6 +1,6 @@
 { pkgs, inputs, ... }:
 {
-  imports = [ inputs.niri.nixosModules.niri ];
+  # imports = [ inputs.niri.nixosModules.niri ];
   nix = {
     settings = {
       auto-optimise-store = true;
