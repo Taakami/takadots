@@ -4,14 +4,14 @@
 }: {
   programs.niri.settings.binds = {
     # Volume
-    "XF86AudioRaiseVolume".action.spawn = "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+";
-    "XF86AudioLowerVolume".action.spawn = "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+-";
-    "XF86AudioMute".action.spawn = "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle";
+    "XF86AudioRaiseVolume".action.spawn = ["wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+"];
+    "XF86AudioLowerVolume".action.spawn = ["wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+-"];
+    "XF86AudioMute".action.spawn = ["wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle"];
 
     # Apps
-    "Mod+Space".action.spawn = "rofi -show drun";
-    "Mod+Return".action.spawn = "alacritty";
-    "Mod+Shift+N".action.spawn = "swaync-client" "-t" "-sw";
+    "Mod+Space".action.spawn = ["rofi -show drun"];
+    "Mod+Return".action.spawn = ["alacritty"];
+    "Mod+Shift+N".action.spawn = ["swaync-client" "-t" "-sw"];
 
     # Other
     "Mod+Q".action.close-window = true;
