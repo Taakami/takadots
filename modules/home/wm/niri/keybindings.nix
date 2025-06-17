@@ -13,8 +13,8 @@
     "Mod+Shift+N".action.spawn = ["swaync-client" "-t" "-sw"];
 
     # Other
-    "Mod+Q".action.close-window = "";
-    "Mod+O".action.toggle-overview = "";
+    "Mod+Q".action.close-window =;
+    "Mod+O".action.toggle-overview =;
 
     # Workspace
     "Mod+Ampersand".action.focus-workspace = 1;
@@ -38,36 +38,36 @@
     "Mod+Shift+CCedilla".action.move-column-to-workspace = 9;
     "Mod+Shift+Agrave".action.move-column-to-workspace = 10;
 
-    "Mod+U".action.focus-workspace-down = "";
-    "Mod+I".action.focus-workspace-up = "";
-    "Mod+Ctrl+U".action.move-column-to-workspace-down = "";
-    "Mod+Ctrl+I".action.move-column-to-workspace-up = "";
+    "Mod+U".action.focus-workspace-down =;
+    "Mod+I".action.focus-workspace-up =;
+    "Mod+Ctrl+U".action.move-column-to-workspace-down =;
+    "Mod+Ctrl+I".action.move-column-to-workspace-up =;
 
     # Window / column
-    "Mod+R".action.switch-preset-column-width = "";
-    "Mod+Shift+R".action.switch-preset-column-height = "";
-    "Mod+Ctrl+R".action.reset-window-height = "";
-    "Mod+F".action.maximize-column = "";
-    "Mod+Shift+F".action.fullscreen-window = "";
-    "Mod+Ctrl+F".action.expand-column-to-available-width = "";
-    "Mod+Ctrl+C".action.center-visible-columns = "";
+    "Mod+R".action.switch-preset-column-width =;
+    "Mod+Shift+R".action.switch-preset-column-height =;
+    "Mod+Ctrl+R".action.reset-window-height =;
+    "Mod+F".action.maximize-column =;
+    "Mod+Shift+F".action.fullscreen-window =;
+    "Mod+Ctrl+F".action.expand-column-to-available-width =;
+    "Mod+Ctrl+C".action.center-visible-columns =;
 
-    "Mod+Down".action.focus-window-down = "";
-    "Mod+Left".action.focus-column-left = "";
-    "Mod+Up".action.focus-window-up = "";
-    "Mod+Right".action.focus-column-right = "";
-    "Mod+H".action.move-column-left = "";
-    "Mod+J".action.move-window-down = "";
-    "Mod+K".action.move-window-up = "";
-    "Mod+L".action.move-column-right = "";
-    "Mod+Ctrl+Down".action.move-window-down = "";
-    "Mod+Ctrl+Left".action.move-column-left = "";
-    "Mod+Ctrl+Up".action.move-window-up = "";
-    "Mod+Ctrl+Right".action.move-column-right = "";
-    "Mod+Ctrl+H".action.move-column-left = "";
-    "Mod+Ctrl+J".action.move-window-down = "";
-    "Mod+Ctrl+K".action.move-window-up = "";
-    "Mod+Ctrl+L".action.move-column-right = "";
+    "Mod+Down".action.focus-window-down =;
+    "Mod+Left".action.focus-column-left =;
+    "Mod+Up".action.focus-window-up =;
+    "Mod+Right".action.focus-column-right =;
+    "Mod+H".action.move-column-left =;
+    "Mod+J".action.move-window-down =;
+    "Mod+K".action.move-window-up =;
+    "Mod+L".action.move-column-right =;
+    "Mod+Ctrl+Down".action.move-window-down =;
+    "Mod+Ctrl+Left".action.move-column-left =;
+    "Mod+Ctrl+Up".action.move-window-up =;
+    "Mod+Ctrl+Right".action.move-column-right =;
+    "Mod+Ctrl+H".action.move-column-left =;
+    "Mod+Ctrl+J".action.move-window-down =;
+    "Mod+Ctrl+K".action.move-window-up =;
+    "Mod+Ctrl+L".action.move-column-right =;
 
     "Mod+Shift+Left".action.set-column-width = "-10%";
     "Mod+Shift+Right".action.set-column-width = "+10%";
@@ -78,10 +78,10 @@
     "Mod+Shift+K".action.set-window-height = "+10%";
     "Mod+Shift+L".action.set-window-width = "+10%";
 
-    "Mod+Home".action.focus-column-first = "";
-    "Mod+End".action.focus-column-last = "";
+    "Mod+Home".action.focus-column-first =;
+    "Mod+End".action.focus-column-last =;
 
-    "Mod+W".action.toggle-column-tabbed-display = "";
+    "Mod+W".action.toggle-column-tabbed-display =;
 
   };
 }
