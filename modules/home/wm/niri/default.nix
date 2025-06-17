@@ -24,8 +24,8 @@
       spawn-at-startup = [
         { command = ["waybar"]; }
         { command = ["swaync"]; }
-        { command = ["swww-daemon --format xrgb"]; }
-        { command = ["clipse -listen"]; }
+        { command = ["swww-daemon" "--format" "xrgb"]; }
+        { command = ["clipse" "-listen"]; }
       ];
     };
   };
