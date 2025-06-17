@@ -62,13 +62,13 @@
     "Mod+K".action = move-column-up;
     "Mod+L".action = move-column-right;
     "Mod+Ctrl+Down".action = move-window-down;
-    "Mod+Ctrl+Left".action = move-window-left;
+    "Mod+Ctrl+Left".action = move-column-left;
     "Mod+Ctrl+Up".action = move-window-up;
-    "Mod+Ctrl+Right".action = move-window-right;
-    "Mod+Ctrl+H".action = move-window-left;
+    "Mod+Ctrl+Right".action = move-column-right;
+    "Mod+Ctrl+H".action = move-column-left;
     "Mod+Ctrl+J".action = move-window-down;
     "Mod+Ctrl+K".action = move-window-up;
-    "Mod+Ctrl+L".action = move-window-right;
+    "Mod+Ctrl+L".action = move-column-right;
 
     "Mod+Shift+Left".action = set-column-width "-10%";
     "Mod+Shift+Right".action = set-column-width "+10%";
