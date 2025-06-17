@@ -4,11 +4,9 @@
   stylix.targets.niri.enable = true;
   programs.niri.settings = {
     prefer-no-csd = true;
-    border = {
-      width = 2;
-    };
     cursor.hide-after-inactive-ms = 5000;
     layout = {
+      border.width = 2;
       gaps = 8;
       center-focused-column = true;
       preset-column-widths = [
