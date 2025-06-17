@@ -20,12 +20,12 @@
         };
         power-key-handling.enable = false;
       };
+      spawn-at-startup = [
+        "waybar"
+        "swaync"
+        "swww-daemon --format xrgb"
+        "clipse -listen"
+      ];
     };
-    spawn-at-startup = [
-      "waybar"
-      "swaync"
-      "swww-daemon --format xrgb"
-      "clipse -listen"
-    ];
   };
 }
