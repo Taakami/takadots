@@ -8,7 +8,7 @@
     layout = {
       border.width = 2;
       gaps = 8;
-      center-focused-column = true;
+      always-center-single-column = true;
       preset-column-widths = [
         { proportion = 1. / 3.; }
         { proportion = 1. / 2.; }
