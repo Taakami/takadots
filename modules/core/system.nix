@@ -26,6 +26,6 @@
   nixpkgs.config.allowUnfree = true;
   nixpkgs.overlays = [
     inputs.niri.overlays.niri
-  ]
+  ];
   system.stateVersion = "25.05";
 }
