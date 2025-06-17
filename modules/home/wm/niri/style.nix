@@ -1,7 +1,7 @@
 {
   ...
 }: {
-  stylix.targets.niri.enable = true;
+  # stylix.targets.niri.enable = true;
   programs.niri.settings = {
     prefer-no-csd = true;
     cursor.hide-after-inactive-ms = 5000;

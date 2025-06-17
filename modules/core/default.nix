@@ -3,9 +3,9 @@
   imports = [
     ./bluetooth.nix
     ./bootloader.nix
-    ./dm.nix
+    # ./dm.nix
     ./fonts.nix
-    # ./greeter.nix
+    ./greeter.nix
     ./hardware.nix
     ./i18n.nix
     ./network.nix
