@@ -1,5 +1,4 @@
 {
-  config,
   ...
 }: {
   programs.niri.settings.binds = {
@@ -14,8 +13,8 @@
     "Mod+Shift+N".action.spawn = ["swaync-client" "-t" "-sw"];
 
     # Other
-    "Mod+Q".action.close-window = true;
-    "Mod+O".action.toggle-overview = true;
+    "Mod+Q".action.close-window;
+    "Mod+O".action.toggle-overview;
 
     # Workspace
     "Mod+Ampersand".action.focus-workspace = 1;
@@ -39,36 +38,36 @@
     "Mod+Shift+CCedilla".action.move-column-to-workspace = 9;
     "Mod+Shift+Agrave".action.move-column-to-workspace = 10;
 
-    "Mod+U".action.focus-workspace-down = true;
-    "Mod+I".action.focus-workspace-up = true;
-    "Mod+Ctrl+U".action.move-column-to-workspace-down = true;
-    "Mod+Ctrl+I".action.move-column-to-workspace-up = true;
+    "Mod+U".action.focus-workspace-down;
+    "Mod+I".action.focus-workspace-up;
+    "Mod+Ctrl+U".action.move-column-to-workspace-down;
+    "Mod+Ctrl+I".action.move-column-to-workspace-up;
 
     # Window / column
-    "Mod+R".action.switch-preset-column-width = true;
-    "Mod+Shift+R".action.switch-preset-column-height = true;
-    "Mod+Ctrl+R".action.reset-window-height = true;
-    "Mod+F".action.maximize-column = true;
-    "Mod+Shift+F".action.fullscreen-window = true;
-    "Mod+Ctrl+F".action.expand-column-to-available-width = true;
-    "Mod+Ctrl+C".action.center-visible-columns = true;
+    "Mod+R".action.switch-preset-column-width;
+    "Mod+Shift+R".action.switch-preset-column-height;
+    "Mod+Ctrl+R".action.reset-window-height;
+    "Mod+F".action.maximize-column;
+    "Mod+Shift+F".action.fullscreen-window;
+    "Mod+Ctrl+F".action.expand-column-to-available-width;
+    "Mod+Ctrl+C".action.center-visible-columns;
 
-    "Mod+Down".action.focus-window-down = true;
-    "Mod+Left".action.focus-column-left = true;
-    "Mod+Up".action.focus-window-up = true;
-    "Mod+Right".action.focus-column-right = true;
-    "Mod+H".action.move-column-left = true;
-    "Mod+J".action.move-window-down = true;
-    "Mod+K".action.move-window-up = true;
-    "Mod+L".action.move-column-right = true;
-    "Mod+Ctrl+Down".action.move-window-down = true;
-    "Mod+Ctrl+Left".action.move-column-left = true;
-    "Mod+Ctrl+Up".action.move-window-up = true;
-    "Mod+Ctrl+Right".action.move-column-right = true;
-    "Mod+Ctrl+H".action.move-column-left = true;
-    "Mod+Ctrl+J".action.move-window-down = true;
-    "Mod+Ctrl+K".action.move-window-up = true;
-    "Mod+Ctrl+L".action.move-column-right = true;
+    "Mod+Down".action.focus-window-down;
+    "Mod+Left".action.focus-column-left;
+    "Mod+Up".action.focus-window-up;
+    "Mod+Right".action.focus-column-right;
+    "Mod+H".action.move-column-left;
+    "Mod+J".action.move-window-down;
+    "Mod+K".action.move-window-up;
+    "Mod+L".action.move-column-right;
+    "Mod+Ctrl+Down".action.move-window-down;
+    "Mod+Ctrl+Left".action.move-column-left;
+    "Mod+Ctrl+Up".action.move-window-up;
+    "Mod+Ctrl+Right".action.move-column-right;
+    "Mod+Ctrl+H".action.move-column-left;
+    "Mod+Ctrl+J".action.move-window-down;
+    "Mod+Ctrl+K".action.move-window-up;
+    "Mod+Ctrl+L".action.move-column-right;
 
     "Mod+Shift+Left".action.set-column-width = "-10%";
     "Mod+Shift+Right".action.set-column-width = "+10%";
@@ -79,10 +78,10 @@
     "Mod+Shift+K".action.set-window-height = "+10%";
     "Mod+Shift+L".action.set-window-width = "+10%";
 
-    "Mod+Home".action.focus-column-first = true;
-    "Mod+End".action.focus-column-last = true;
+    "Mod+Home".action.focus-column-first;
+    "Mod+End".action.focus-column-last;
 
-    "Mod+W".action.toggle-column-tabbed-display = true;
+    "Mod+W".action.toggle-column-tabbed-display;
 
   };
 }
