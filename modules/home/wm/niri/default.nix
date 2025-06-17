@@ -5,6 +5,7 @@
 }: {
   imports = [
     inputs.niri.homeModules.niri
+    inputs.niri.homeModules.stylix
     ./keybindings.nix
     ./style.nix
   ];
