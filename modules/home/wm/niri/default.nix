@@ -22,10 +22,10 @@
         power-key-handling.enable = false;
       };
       spawn-at-startup = [
-        { command = "waybar"; }
-        { command = "swaync"; }
-        { command = "swww-daemon --format xrgb"; }
-        { command = "clipse -listen"; }
+        { command = ["waybar"]; }
+        { command = ["swaync"]; }
+        { command = ["swww-daemon --format xrgb"]; }
+        { command = ["clipse -listen"]; }
       ];
     };
   };
