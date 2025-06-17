@@ -7,10 +7,10 @@ let
 
     case "$choice" in
       sway)
-        exec sway/bin/sway
+        exec sway
         ;;
       niri)
-        exec niri/bin/niri-session
+        exec niri-session
         ;;
       *)
         echo "No valid session selected"
@@ -24,7 +24,7 @@ in
     enable = true;
     settings = rec {
       default_session = {
-        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --cmd ${sessionChooser}";
+        command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --sessions";
         user = "greeter"; # Or your username, but "greeter" is recommended
       };
     };
