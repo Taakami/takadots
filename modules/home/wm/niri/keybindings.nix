@@ -28,16 +28,16 @@
     "Mod+Underscore".action = focus-workspace 8;
     "Mod+CCedilla".action = focus-workspace 9;
     "Mod+Agrave".action = focus-workspace 10;
-    "Mod+Shift+Ampersand".action = move-column-to-workspace 1;
-    "Mod+Shift+Eacute".action = move-column-to-workspace 2;
-    "Mod+Shift+QuoteDbl".action = move-column-to-workspace 3;
-    "Mod+Shift+Apostrophe".action = move-column-to-workspace 4;
-    "Mod+Shift+ParenLeft".action = move-column-to-workspace 5;
-    "Mod+Shift+Minus".action = move-column-to-workspace 6;
-    "Mod+Shift+Egrave".action = move-column-to-workspace 7;
-    "Mod+Shift+Underscore".action = move-column-to-workspace 8;
-    "Mod+Shift+CCedilla".action = move-column-to-workspace 9;
-    "Mod+Shift+Agrave".action = move-column-to-workspace 10;
+    "Mod+Shift+Ampersand".action.move-column-to-workspace = 1;
+    "Mod+Shift+Eacute".action.move-column-to-workspace = 2;
+    "Mod+Shift+QuoteDbl".action.move-column-to-workspace = 3;
+    "Mod+Shift+Apostrophe".action.move-column-to-workspace = 4;
+    "Mod+Shift+ParenLeft".action.move-column-to-workspace = 5;
+    "Mod+Shift+Minus".action.move-column-to-workspace = 6;
+    "Mod+Shift+Egrave".action.move-column-to-workspace = 7;
+    "Mod+Shift+Underscore".action.move-column-to-workspace = 8;
+    "Mod+Shift+CCedilla".action.move-column-to-workspace = 9;
+    "Mod+Shift+Agrave".action.move-column-to-workspace = 10;
 
     "Mod+U".action = focus-workspace-down;
     "Mod+I".action = focus-workspace-up;
