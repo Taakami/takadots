@@ -41,8 +41,8 @@
 
     "Mod+U".action = focus-workspace-down;
     "Mod+I".action = focus-workspace-up;
-    "Mod+Ctrl+U".action.move-column-to-workspace =-down;
-    "Mod+Ctrl+I".action.move-column-to-workspace =-up;
+    "Mod+Ctrl+U".action.move-column-to-workspace-down = true;
+    "Mod+Ctrl+I".action.move-column-to-workspace-up = true;
 
     # Window / column
     "Mod+R".action = switch-preset-column-width;
