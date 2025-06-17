@@ -46,7 +46,7 @@
         format = "{icon} {capacity}%";
         format-icons = ["" "" "" "" ""];
         tooltip-format = "Temps restant : ~{time}";
-        format-charging = "";
+        format-charging = " {capacity}%";
         tooltip-format-charging = "Temps de charge : ~{time}";
         states = {
           warning = 30;
