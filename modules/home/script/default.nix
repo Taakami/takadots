@@ -1,6 +1,6 @@
 {
   home.file."scripts/apod" = {
-    enable = true;
+    executable = true;
     source = ./get_apod.nu;
   };
 }

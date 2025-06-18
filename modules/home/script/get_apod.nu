@@ -4,13 +4,18 @@
 let api_key = "DEMO_KEY"
 
 # Choose the download directory
-let download_dir = "~/Pictures/apod"
-
-# Ensure the directory exists
+let download_dir = "/home/taka/Pictures/apod"
 mkdir $download_dir
 
-# Set the APOD API endpoint
-let url = $"https://api.nasa.gov/planetary/apod?api_key=($api_key)"
+# Get today's date or use the one passed as argument
+let date = (if ($in | is-empty) {
+    date now | format date "%Y-%m-%d"
+} else {
+    $in
+})
+
+# Set the APOD API endpoint with date
+let url = $"https://api.nasa.gov/planetary/apod?api_key=($api_key)&date=($date)"
 
 # Fetch the APOD metadata
 let response = (http get $url)
@@ -25,7 +30,6 @@ if $response.media_type != "image" {
 let image_url = $response.hdurl
 let title = $response.title
 let explanation = $response.explanation
-let date = $response.date
 
 # Print info
 print $"Title: ($title)"
@@ -36,7 +40,7 @@ print $"Explanation: ($explanation)\n"
 let filename = ($image_url | path basename)
 
 # Join full path for saving
-let full_path = (path join $download_dir $filename)
+let full_path = ([$download_dir $filename] | path join)
 
 # Download the image
 http get $image_url | save $full_path
