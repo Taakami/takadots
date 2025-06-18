@@ -10,7 +10,7 @@
     ./style.nix
   ];
   programs.niri = {
-    enable = true;
+    # enable = true;
     # package = pkgs.niri-stable;
     settings = {
       input = {
