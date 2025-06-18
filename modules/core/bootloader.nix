@@ -6,4 +6,5 @@
         useOSProber = true;
         configurationLimit = 10;
     };
+    stylix.targets.grub.enable = true;
 }

@@ -10,6 +10,7 @@
     ./i18n.nix
     ./network.nix
     ./nh.nix
+    ./niri.nix
     ./packages.nix
     ./programs.nix
     ./security.nix
