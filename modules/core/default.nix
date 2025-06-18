@@ -15,6 +15,7 @@
     ./programs.nix
     ./security.nix
     ./services.nix
+    ./stylix.nix
     ./system.nix
     ./thunar.nix
     ./user.nix
