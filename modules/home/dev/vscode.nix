@@ -5,17 +5,14 @@
   # ];
   stylix.targets.vscode = {
     enable = true;
-    profileNames = [
-      "default"
-    ];
   };
   programs.vscode = {
     enable = true;
-    profiles = {
-      default = {
-        enableExtensionUpdateCheck = false;
-        enableUpdateCheck = false;
-        extensions = with pkgs; [
+    # profiles = {
+      # default = {
+        # enableExtensionUpdateCheck = false;
+        # enableUpdateCheck = false;
+        # extensions = with pkgs; [
           # vscode-extensions.bbenoist.nix
           # vscode-extensions.kamadorueda.alejandra
           # vscode-extensions.bradlc.vscode-tailwindcss
@@ -26,8 +23,8 @@
           # vscode-extensions.wix.vscode-import-cost
           # vscode-marketplace.google.geminicodeassist
           # vscode-marketplace.nuxtr.nuxtr-vscode
-        ];
-      };
-    };
+        # ];
+      # };
+    # };
   };
 }
