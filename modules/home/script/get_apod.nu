@@ -22,7 +22,7 @@ if $response.media_type != "image" {
 }
 
 # Extract metadata
-let image_url = $response.url
+let image_url = $response.hdurl
 let title = $response.title
 let explanation = $response.explanation
 let date = $response.date
@@ -33,7 +33,7 @@ print $"Date: ($date)"
 print $"Explanation: ($explanation)\n"
 
 # Extract filename from URL
-let filename = ($image_url | parse --regex '[^/]+$' | get 0.0)
+let filename = ($image_url | path basename)
 
 # Join full path for saving
 let full_path = (path join $download_dir $filename)
