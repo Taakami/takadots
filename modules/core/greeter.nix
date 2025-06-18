@@ -36,7 +36,7 @@
       appearance.greeting_msg = "Hey";
       widget.clock = {
         format = "%A %H:%M";
-        timezone = null;
+        timezone = "Europe/Paris";
       };
     };
   };
