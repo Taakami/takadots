@@ -37,7 +37,7 @@
           "(.*) - Zen Browser" = " $1 • 🌍";
           "(.*) - Visual Studio Code" = "$1 • 󰨞";
         };
-      }
+      };
       tray = {
         icon-size = 16;
         spacing = 4;
