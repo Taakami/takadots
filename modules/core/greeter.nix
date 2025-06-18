@@ -25,20 +25,20 @@
     settings = rec {
       default_session = {
         # command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --cmd ${pkgs.niri}/bin/niri-session";
-        command = "${pkgs.cage}/bin/cage -s -mlast -- ${config.programs.regreet.package}/bin/regreet";
+        command = "${pkgs.cage}/bin/cage -s -mlast -- regreet";
         user = "greeter"; # Or your username, but "greeter" is recommended
       };
     };
   };
   programs.regreet = {
     enable = true;
-    settings = {
-      appearance.greeting_msg = "Hey";
-      widget.clock = {
-        format = "%A %H:%M";
-        timezone = "Europe/Paris";
-      };
-    };
+    # settings = {
+    #   appearance.greeting_msg = "Hey";
+    #   widget.clock = {
+    #     format = "%A %H:%M";
+    #     timezone = "Europe/Paris";
+    #   };
+    # };
   };
-  stylix.targets.regreet.enable = true;
+  # stylix.targets.regreet.enable = true;
 }
