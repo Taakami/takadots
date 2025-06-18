@@ -60,6 +60,6 @@
     targets = {
       console.enable = true;
     };
-    image = ~/takadots/assets/imgs/wallpaper.png;
+    image = ../../assets/imgs/wallpaper.png;
   };
 }
