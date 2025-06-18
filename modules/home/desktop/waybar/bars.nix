@@ -4,8 +4,8 @@
     mainBar = {
       layer = "top";
       position = "top";
-      modules-left = [ "sway/workspaces" "sway/mode" ];
-      modules-center = [ "sway/window" ];
+      modules-left = [ "sway/workspaces" "niri/workspaces" "sway/mode" ];
+      modules-center = [ "sway/window" "niri/window" ];
       modules-right = [ "tray" "pulseaudio" "battery" "clock" "backlight" "network" ];
       "sway/workspaces" = {
         all-outputs = true;
@@ -31,6 +31,13 @@
           "(.*) - Visual Studio Code" = "$1 • 󰨞";
         };
       };
+      "niri/window" = {
+        max-length = 50;
+        rewrite = {
+          "(.*) - Zen Browser" = " $1 • 🌍";
+          "(.*) - Visual Studio Code" = "$1 • 󰨞";
+        };
+      }
       tray = {
         icon-size = 16;
         spacing = 4;
