@@ -43,7 +43,7 @@
       background-color: @base0D;
       color: @base00;
     }
-    #window, #mode, #pulseaudio, #battery, #clock, #backlight, #network {
+    #window, #mode, #pulseaudio, #battery, #clock, #backlight, #network, #tray {
       margin-top: 8px;
       margin-right: 4px;
       padding-right: 4px;

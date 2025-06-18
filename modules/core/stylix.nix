@@ -41,8 +41,8 @@
       serif = config.stylix.fonts.monospace;
       sansSerif = config.stylix.fonts.monospace;
       monospace = {
-        package = pkgs.jetbrains-mono;
-        name = "JetBrains Mono";
+        package = pkgs.maple-mono.variable;
+        name = "Maple Mono";
       };
       emoji = {
         package = pkgs.noto-fonts-emoji;
@@ -52,13 +52,14 @@
     opacity = {
       applications = 0.7;
       desktop = 0.7;
-      popups = 0.5;
-      terminal = 0.5;
+      popups = 0.7;
+      terminal = 0.7;
     };
     # overlays.enable = true;
     polarity = "dark";
     targets = {
       console.enable = true;
     };
+    image = "~/takadots/assets/imgs/wallpaper.png";
   };
 }

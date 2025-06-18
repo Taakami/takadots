@@ -3,7 +3,6 @@
   imports = [
     ./bluetooth.nix
     ./bootloader.nix
-    # ./dm.nix
     ./fonts.nix
     ./greeter.nix
     ./hardware.nix

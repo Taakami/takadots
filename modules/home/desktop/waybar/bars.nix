@@ -57,7 +57,7 @@
         timezone = "Europe/Paris";
         format = " {:%H:%M}";
         tooltip-format = "{:%A, %d %B %Y}";
-        on-click = "gnome-calendar";
+        on-click = "thunderbird -calendar";
       };
       backlight = {
         format = "{icon} {percent}%";

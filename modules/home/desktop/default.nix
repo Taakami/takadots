@@ -2,14 +2,13 @@
 {
   imports = [
     ./clipse.nix        # Clipboard history manager
-    # ./cursor.nix        # Cursor theme for desktop
-    ./stylix.nix        # Stylix theme manager
+    ./stylix.nix        # Stylix
     ./playerctl.nix     # Media player control
-    ./swayimg.nix       # Swayimg image viewer
+    ./swayimg.nix       # image viewer
     ./swaync.nix        # Notifications
     ./swww.nix          # Wallpaper
-    ./waybar          # Status bar
+    ./waybar            # bar
     ./wob.nix           # Overlay
-    ./yazi.nix          # Yazi file manager
+    ./yazi.nix          # file manager
   ];
 }

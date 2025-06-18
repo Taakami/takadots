@@ -1,13 +1,11 @@
 { pkgs, inputs, ... }:
 {
-  # home.packages = with pkgs; [
-  #   vesktop
-  # ];
   imports = [
     inputs.nixcord.homeModules.nixcord
   ];
   programs.nixcord = {
     enable = true;
+    discord.enable = false;
     vesktop.enable = true;
     
     config = {

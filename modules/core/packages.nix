@@ -5,7 +5,6 @@
         networkmanagerapplet        # Network manager applet
         overskride                  # Bluetooth manager
         git                         # Version control system
-        gnome-calendar              # Agenda
         adwaita-icon-theme          # Icon theme for GNOME
         grim                        # screenshot functionality
         slurp                       # screenshot functionality
