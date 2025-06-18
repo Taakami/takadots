@@ -25,7 +25,7 @@
     settings = rec {
       default_session = {
         # command = "${pkgs.greetd.tuigreet}/bin/tuigreet --time --remember --cmd ${pkgs.niri}/bin/niri-session";
-        command = "${pkgs.cage}/bin/cage -s -mlast -- regreet";
+        command = "${pkgs.cage}/bin/cage -s -mlast -- ${pkgs.regreet}/bin/regreet";
         user = "greeter"; # Or your username, but "greeter" is recommended
       };
     };

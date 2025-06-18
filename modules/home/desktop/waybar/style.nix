@@ -1,9 +1,5 @@
 { ... }:
 {
-  stylix.targets.waybar = {
-    enable = true;
-    addCss = false;
-  };
   programs.waybar.style = ''
     * {
       min-height: 0;
