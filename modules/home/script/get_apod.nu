@@ -37,7 +37,7 @@ print $"Date: ($date)"
 print $"Explanation: ($explanation)\n"
 
 # Extract filename from URL
-let filename = ($image_url | path basename)
+let filename = { $image_url | path basename }
 
 # Join full path for saving
 let full_path = ([$download_dir $filename] | path join)
