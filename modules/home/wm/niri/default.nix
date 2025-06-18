@@ -4,13 +4,13 @@
   ...
 }: {
   imports = [
-    # inputs.niri.homeModules.niri
+    inputs.niri.homeModules.niri
     # inputs.niri.homeModules.stylix
     ./keybindings.nix
     ./style.nix
   ];
   programs.niri = {
-    # enable = true;
+    enable = true;
     # package = pkgs.niri-stable;
     settings = {
       input = {
