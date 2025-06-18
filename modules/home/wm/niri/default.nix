@@ -11,7 +11,7 @@
   ];
   programs.niri = {
     enable = true;
-    package = pkgs.niri-stable;
+    # package = pkgs.niri-stable;
     settings = {
       input = {
         keyboard = {
