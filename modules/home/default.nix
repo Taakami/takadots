@@ -19,6 +19,9 @@
     # Launchers
     ./launcher
 
+    # Scripts
+    ./script
+
     # Shell
     ./shell
 

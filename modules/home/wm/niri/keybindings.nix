@@ -57,10 +57,10 @@
     "Mod+Left".action = focus-column-left;
     "Mod+Up".action = focus-window-up;
     "Mod+Right".action = focus-column-right;
-    "Mod+H".action = move-column-left;
-    "Mod+J".action = move-window-down;
-    "Mod+K".action = move-window-up;
-    "Mod+L".action = move-column-right;
+    "Mod+H".action = focus-column-left;
+    "Mod+J".action = focus-window-down;
+    "Mod+K".action = focus-window-up;
+    "Mod+L".action = focus-column-right;
     "Mod+Ctrl+Down".action = move-window-down;
     "Mod+Ctrl+Left".action = move-column-left;
     "Mod+Ctrl+Up".action = move-window-up;
