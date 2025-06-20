@@ -1,7 +1,6 @@
-{ pkgs, waypaper, ... }:
+{ pkgs, ... }:
 {
   home.packages = with pkgs; [ waypaper ];
-  # [TODO] make the config file for waypaper
   xdg.configFile."waypaper/config.ini".text = ''
     [Settings]
     language = fr
