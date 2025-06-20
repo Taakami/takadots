@@ -8,6 +8,7 @@
     # inputs.niri.homeModules.stylix
     ./keybindings.nix
     ./style.nix
+    ./window-rules.nix
   ];
   programs.niri = {
     # enable = true;

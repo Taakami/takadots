@@ -41,4 +41,7 @@
     };
   };
   stylix.targets.regreet.enable = true;
+  services.cage.environment = {
+    XKB_DEFAULT_LAYOUT = "fr";
+  };
 }

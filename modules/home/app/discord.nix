@@ -67,8 +67,8 @@
       --remove-bg-layer: on; /* off: no changes, on: remove the base --bg-3 layer for use with window transparency (WILL OVERRIDE BACKGROUND IMAGE) */
       --panel-blur: on; /* off: no changes, on: blur the background of panels */
       --blur-amount: 12px; /* amount of blur */
-      --bg-floating: var(
-        --bg-3
+      --bg-floating: color(
+        from var(--base0D) srgb r g b / 0.3
       ); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
 
       /* other options */

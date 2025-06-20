@@ -9,7 +9,8 @@
     "XF86AudioMute".action = spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle";
 
     # Apps
-    "Mod+Space".action = spawn "rofi" "-show" "drun";
+    
+    "Mod+Space".action = spawn "rofi" "-show" "combi" "-modes" "combi" "-combi-modes" "'window,drun,run'";
     "Mod+Return".action = spawn "alacritty";
     "Mod+Shift+N".action = spawn "swaync-client" "-t" "-sw";
 

@@ -6,5 +6,8 @@
     settings = {
       show_banner = false;
     };
+    plugins = with pkgs.nushellPlugins; [
+      query
+    ];
   };
 }

@@ -1,6 +1,7 @@
+{pkgs, ...}:
+let
+  scrap_artvee = pkgs.writeScript "ima-artvee" (builtins.readFile ./scripts/scrap_artvee.nu);
+in
 {
-  home.file."scripts/apod" = {
-    executable = true;
-    source = ./get_apod.nu;
-  };
+  home.packages = [ scrap_artvee ];
 }
