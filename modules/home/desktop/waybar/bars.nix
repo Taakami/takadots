@@ -4,8 +4,8 @@
     mainBar = {
       layer = "top";
       position = "top";
-      modules-left = [  "sway/window" "niri/window" "tray" "sway/mode" ];
-      modules-center = [ "sway/workspaces" "niri/workspaces" ];
+      modules-left = [ "sway/workspaces" "niri/workspaces" "tray" "sway/mode" ];
+      modules-center = [ "sway/window" "niri/window" ];
       modules-right = [ "pulseaudio" "battery" "clock" "backlight" "network" ];
       "sway/workspaces" = {
         all-outputs = true;
@@ -13,12 +13,6 @@
           "1" = [];
           "2" = [];
           "3" = [];
-          # "4" = [];
-          # "5" = [];
-          # "6" = [];
-          # "7" = [];
-          # "8" = [];
-          # "9" = [];
         };
       };
       "sway/mode" = {

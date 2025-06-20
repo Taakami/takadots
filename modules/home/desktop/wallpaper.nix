@@ -5,6 +5,8 @@
     [Settings]
     language = fr
     folder = ~/Pictures/wallpapers/
+    wallpaper = ~/Pictures/wallpapers/wallpaper.jpg
+    monitors = All
     backend = swww
     fill = fill
     sort = name

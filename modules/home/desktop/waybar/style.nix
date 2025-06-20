@@ -58,16 +58,13 @@
       color: @base00;
     }
     #battery.warning {
-      background-color: @base0A;
-      color: @base00;
+      border: 1px solid @base0A;
     }
     #battery.critical {
-      background-color: @base08;
-      color: @base00;
+      border: 1px solid @base08;
     }
     #pulseaudio.muted {
-      background-color: @base0A;
-      color: @base00;
+      border: 1px solid @base0A;
     }
     #network {
       margin-left: 8px;
