@@ -8,6 +8,6 @@
         top-right = 4;
       };
       clip-to-geometry = true;
-    };
+    }
   ];
 }
