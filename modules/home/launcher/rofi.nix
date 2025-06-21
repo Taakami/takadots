@@ -1,4 +1,4 @@
-{ pkgs, config, lib, inputs ... } :
+{ pkgs, config, lib, inputs, ... } :
 {
   stylix.targets.rofi.enable = true;
   programs.rofi = {
