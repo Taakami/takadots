@@ -43,7 +43,7 @@ def main [] {
   )
 
   if not ($selected_wallpaper | is-empty) {
-      swww img $"($wallpaper_dir)/$($selected_category)/($selected_wallpaper)" -t any
+      swww img $"($wallpaper_dir)/($selected_category)/($selected_wallpaper)" -t any
       print $"Wallpaper set to: ($selected_wallpaper)"
   } else {
       print "No wallpaper selected. Exiting."
