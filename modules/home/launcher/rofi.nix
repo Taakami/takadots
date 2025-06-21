@@ -27,4 +27,8 @@
       };
     };
   };
+  home.packages = with pkgs; [ 
+    inputs.bzmenu.packages.${system}.default
+    inputs.iwmenu.packages.${system}.default
+  ];
 }

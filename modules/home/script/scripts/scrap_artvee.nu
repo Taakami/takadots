@@ -1,6 +1,6 @@
 #!/usr/bin/env nu
 
-let image_dir = '~/Pictures/wallpapers/paints/'
+let image_dir = $"($env.HOME)/Pictures/wallpapers/paints/"
 
 def slugify [input_string]: string -> string {
     $input_string
