@@ -21,10 +21,10 @@ def main [] {
     | str downcase
 
   match $command {
-    "poweroff" => { systemctl poweroff }
-    "reboot" => { systemctl reboot }
-    "sleep" => { systemctl suspend }
-    "hibernate" => { systemctl hibernate }
-    _ => { print --stderr $"Unknown option: ($command)" }
+    "poweroff" => { ^systemctl poweroff },
+    "reboot" => { ^systemctl reboot },
+    "sleep" => { ^systemctl suspend },
+    "hibernate" => { ^systemctl hibernate },
+    _ => {print --stderr $"Unknown option: ($command)"}
   }
 }
