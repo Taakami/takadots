@@ -10,10 +10,11 @@
 
     # Apps
     
-    "Mod+Space".action = spawn "rofi" "-show" "combi" "-modes" "combi" "-combi-modes" "'window,drun,run'";
+    "Mod+Space".action = spawn "rofi" "-show" "combi" "-modes" "combi" "-combi-modes" "'window,drun,run'" "-show-icons";
     "Mod+Return".action = spawn "alacritty";
     "Mod+Shift+N".action = spawn "swaync-client" "-t" "-sw";
     "Mod+F10".action = spawn "set-wallpaper";
+    "Mod+Shift+F10".action = spawn "set-wallpaper" "random";
 
     # Other
     "Mod+Q".action = close-window;

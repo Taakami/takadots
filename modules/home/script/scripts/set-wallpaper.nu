@@ -39,7 +39,7 @@ def main [] {
   )
   let selected_wallpaper = (
       $rofi_input
-      | rofi -dmenu -i -no-custom -p "Select Wallpaper" -keep-right
+      | rofi -dmenu -i -no-custom -p "Select Wallpaper" -keep-right -show-icons
   )
 
   if not ($selected_wallpaper | is-empty) {
@@ -48,4 +48,15 @@ def main [] {
   } else {
       print "No wallpaper selected. Exiting."
   }
+}
+def "main random" [] {
+    $wallpaper_dir + "/*"
+    | glob $in --no-file
+    | shuffle
+    | first
+    | $in + "/*"
+    | glob $in --no-dir
+    | shuffle
+    | first
+    | swww img $in -t any
 }

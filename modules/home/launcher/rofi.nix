@@ -12,7 +12,7 @@
       "combi"
     ];
     extraConfig = {
-      show-icons = true;
+      # show-icons = true;
       "display-drun" = "";
     };
     theme =  let

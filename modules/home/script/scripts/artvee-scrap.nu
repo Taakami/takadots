@@ -5,6 +5,7 @@ let image_dir = $"($env.HOME)/Pictures/wallpapers/paints/"
 def slugify [input_string]: string -> string {
     $input_string
     | str trim
+    | iconv -f utf-8 -t ascii//TRANSLIT
     | str replace --regex '[^a-zA-Z0-9\s-]' '' --all
     | str replace --regex '[\s-]+' '_' --all
     | str replace --regex '^[_]|[_]$' '' --all
@@ -38,7 +39,7 @@ def main [
     | path parse
     | get extension
 
-    let filename = $"($artwork_title)-($artwork_author).($image_extension)"
+    let filename = $"($artwork_title)_-_($artwork_author).($image_extension)"
 
     if ($filename | path exists) {
         print $"⏩ File '($filename)' already exists. Skipping download."
