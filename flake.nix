@@ -26,8 +26,8 @@
       url = "github:0xc000022070/zen-browser-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    inputs.iwmenu.url = "github:e-tho/iwmenu";
-    inputs.bzmenu.url = "github:e-tho/bzmenu";
+    iwmenu.url = "github:e-tho/iwmenu";
+    bzmenu.url = "github:e-tho/bzmenu";
   };
 
   outputs = { self, nixpkgs, ... }@inputs:
