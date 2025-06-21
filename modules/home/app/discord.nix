@@ -68,7 +68,7 @@
       --panel-blur: on; /* off: no changes, on: blur the background of panels */
       --blur-amount: 12px; /* amount of blur */
       --bg-floating: color(
-        from var(--base0D) srgb r g b / 0.3
+        from var(--base0D) srgb r g b / 0.8
       ); /* set this to a more opaque color if floating panels look too transparent. only applies if panel blur is on  */
 
       /* other options */
