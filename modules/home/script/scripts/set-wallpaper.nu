@@ -16,6 +16,7 @@ def main [] {
 
   let selected_category = (
       $categories
+      | path basename
       | str join "\n"
       | rofi -dmenu -i -no-custom -p "Select Category" -keep-right
   )
@@ -27,12 +28,12 @@ def main [] {
 
 
   # --- Stage 2: Select an Image ---
-  let images =  $selected_category + "/*" | glob $in --no-dir
+  let images = $wallpaper_dir + "/" + $selected_category + "/*" | glob $in --no-dir
 
   let rofi_input = (
       $images
       | each { |it|
-          $"($it)\u{0}icon\u{1f}($it)\n"
+          $"($it | path basename)\u{0}icon\u{1f}($it)\n"
       }
       | str join
   )
@@ -42,7 +43,7 @@ def main [] {
   )
 
   if not ($selected_wallpaper | is-empty) {
-      swww img $selected_wallpaper
+      swww img $"($wallpaper_dir)/$($selected_category)/($selected_wallpaper)" -t any
       print $"Wallpaper set to: ($selected_wallpaper)"
   } else {
       print "No wallpaper selected. Exiting."
