@@ -1,4 +1,4 @@
-{ pkgs, config, lib,  ... } :
+{ pkgs, config, lib, inputs ... } :
 {
   stylix.targets.rofi.enable = true;
   programs.rofi = {
@@ -9,13 +9,8 @@
       "window"
       "drun"
       "run"
-      "calc"
     ];
-    plugins = with pkgs; [
-      rofi-calc
-      rofi-network-manager
-    ];
-    extraConfig = {
+    Config = {
       show-icons = true;
       "display-drun" = "";
     };

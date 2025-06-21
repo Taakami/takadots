@@ -13,6 +13,7 @@
     "Mod+Space".action = spawn "rofi" "-show" "combi" "-modes" "combi" "-combi-modes" "'window,drun,run'";
     "Mod+Return".action = spawn "alacritty";
     "Mod+Shift+N".action = spawn "swaync-client" "-t" "-sw";
+    "Mod+F10".action = spawn "set-wallpaper";
 
     # Other
     "Mod+Q".action = close-window;
