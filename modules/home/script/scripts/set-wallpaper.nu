@@ -17,7 +17,7 @@ def main [] {
   let selected_category = (
       $categories
       | str join "\n"
-      | rofi -dmenu -i -p "Select Category"
+      | rofi -dmenu -i -no-custom -p "Select Category" -keep-right
   )
 
   if ($selected_category | is-empty) {
@@ -32,14 +32,13 @@ def main [] {
   let rofi_input = (
       $images
       | each { |it|
-          let display_name = ($it | path basename | str replace -a "_" " ")
-          $"($display_name)\u{0}icon\u{1f}($it)\u{1f}meta\u{1f}($it)\n"
+          $"($it)\u{0}icon\u{1f}($it)\n"
       }
       | str join
   )
   let selected_wallpaper = (
       $rofi_input
-      | rofi -dmenu -i -p "Select Wallpaper"
+      | rofi -dmenu -i -no-custom -p "Select Wallpaper" -keep-right
   )
 
   if not ($selected_wallpaper | is-empty) {
