@@ -31,11 +31,10 @@ def main [] {
 
 
   # --- Stage 2: Select an Image ---
-  let category_path = (path join $wallpaper_dir $selected_category)
-  let glob_pattern = $"($category_path)/**/*.{$image_extensions | str join ","}"
+  let glob_pattern = $"($selected_category)/**/*.{$image_extensions | str join ","}"
   let images = (glob $glob_pattern)
   if ($images | is-empty) {
-      error make { msg: $"No images found in ($category_path)" }
+      error make { msg: $"No images found in ($selected_category)" }
       return
   }
   let rofi_input = (
