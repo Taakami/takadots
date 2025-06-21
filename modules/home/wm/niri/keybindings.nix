@@ -13,8 +13,9 @@
     "Mod+Space".action = spawn "rofi" "-show" "combi" "-modes" "combi" "-combi-modes" "'window,drun,run'" "-show-icons";
     "Mod+Return".action = spawn "alacritty";
     "Mod+Shift+N".action = spawn "swaync-client" "-t" "-sw";
-    "Mod+F10".action = spawn "set-wallpaper";
-    "Mod+Shift+F10".action = spawn "set-wallpaper" "random";
+    "Mod+F10".action = spawn "taka-set-wallpaper";
+    "Mod+Shift+F10".action = spawn "taka-set-wallpaper" "random";
+    "Mod+F4".action = spawn "taka-power-menu";
 
     # Other
     "Mod+Q".action = close-window;

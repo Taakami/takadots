@@ -1,12 +1,9 @@
 #!/usr/bin/env nu
 
-# --- Configuration ---
 let wallpaper_dir = $"($env.HOME)/Pictures/wallpapers"
-# --- End Configuration ---
 
 
 def main [] {
-  # --- Stage 1: Select a Directory ---
   let categories = $wallpaper_dir + "/*" | glob $in --no-file
 
   if ($categories | is-empty) {
@@ -26,8 +23,6 @@ def main [] {
       return
   }
 
-
-  # --- Stage 2: Select an Image ---
   let images = $wallpaper_dir + "/" + $selected_category + "/*" | glob $in --no-dir
 
   let rofi_input = (

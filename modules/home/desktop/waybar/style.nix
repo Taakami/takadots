@@ -16,6 +16,7 @@
       background: none;
       color: @base05;
     }
+    
     tooltip {
       background-color: @base01;
       border-radius: 8px;
@@ -42,6 +43,9 @@
     #workspaces button.focused {
       background-color: @base0D;
       color: @base00;
+    }
+    window#waybar.empty #window {
+      background-color: transparent;
     }
     #window, #mode, #pulseaudio, #battery, #clock, #backlight, #network, #tray {
       margin-top: 8px;
