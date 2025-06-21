@@ -2,9 +2,6 @@
 
 # --- Configuration ---
 let wallpaper_dir = $"($env.HOME)/Pictures/wallpapers"
-
-let image_extensions = ["jpg", "jpeg", "png", "webp", "gif"]
-
 let set_wallpaper_cmd = "swww img"
 # --- End Configuration ---
 
@@ -14,7 +11,7 @@ def main [] {
   let categories = (ls $wallpaper_dir | where type == dir | get name)
 
   if ($categories | is-empty) {
-      error make { msg: "No subdirectories found in ($wallpaper_dir)" }
+      error make { msg: $"No subdirectories found in ($wallpaper_dir)" }
       return
   }
 
@@ -31,12 +28,7 @@ def main [] {
 
 
   # --- Stage 2: Select an Image ---
-  let glob_pattern = $"($selected_category)/**/*.{$image_extensions | str join ","}"
-  let images = (glob $glob_pattern)
-  if ($images | is-empty) {
-      error make { msg: $"No images found in ($selected_category)" }
-      return
-  }
+  let images = ls $selected_category | get name
   let rofi_input = (
       $images
       | each { |it|
