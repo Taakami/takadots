@@ -4,8 +4,8 @@
     # Apps
     ./app
 
-    # Audio
-    ./audio
+    # Medias
+    ./media
 
     # CLI
     ./cli

@@ -8,6 +8,7 @@
     };
     plugins = with pkgs.nushellPlugins; [
       query
+      highlight
     ];
   };
 }

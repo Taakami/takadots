@@ -21,7 +21,6 @@
       url = "github:danth/stylix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    waytrogen.url = "github:nikolaizombie1/waytrogen";
     yazi.url = "github:sxyazi/yazi";
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";

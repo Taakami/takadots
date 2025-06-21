@@ -18,9 +18,6 @@
     extraConfig = {
       show-icons = true;
       "display-drun" = "";
-      "display-window" = "";
-      "display-run" = "";
-      "display-calc" = "";
     };
     theme =  let
      inherit (config.lib.formats.rasi) mkLiteral;

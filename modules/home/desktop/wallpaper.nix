@@ -1,6 +1,6 @@
 { inputs, pkgs, ... }:
 {
-  home.packages = with pkgs; [ inputs.waytrogen.packages.${system}.default ];
+  home.packages = with pkgs; [ waypaper ];
   services = {
     swww.enable = true;
   };
