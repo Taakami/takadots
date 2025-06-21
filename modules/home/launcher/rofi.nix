@@ -9,8 +9,9 @@
       "window"
       "drun"
       "run"
+      "combi"
     ];
-    Config = {
+    extraConfig = {
       show-icons = true;
       "display-drun" = "";
     };
