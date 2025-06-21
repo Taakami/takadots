@@ -15,16 +15,11 @@ def main [] {
     return
   }
 
-  let command = $selection
-    | split column " "
-    | get column2
-    | str downcase
-
-  match $command {
-    "poweroff" => { ^systemctl poweroff },
-    "reboot" => { ^systemctl reboot },
-    "sleep" => { ^systemctl suspend },
-    "hibernate" => { ^systemctl hibernate },
-    _ => {print --stderr $"Unknown option: ($command)"}
+  match $selection {
+    " Poweroff" => { ^systemctl poweroff },
+    "󰜉 Reboot" => { ^systemctl reboot },
+    "󰒲 Sleep" => { ^systemctl suspend },
+    "󰤄 Hibernate" => { ^systemctl hibernate },
+    _ => {print --stderr $"Unknown option: ($selection)"}
   }
 }
