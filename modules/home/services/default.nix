@@ -14,5 +14,5 @@
     swww.enable = true;
     wob.enable = true;
     mpris-proxy.enable = true; #bluetooth proxy
-  }
+  };
 }
