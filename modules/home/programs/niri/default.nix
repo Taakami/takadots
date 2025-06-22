@@ -6,10 +6,11 @@
   imports = [
     # inputs.niri.homeModules.niri
     # inputs.niri.homeModules.stylix
-    ./keybindings.nix
+    # ./keybindings.nix
     ./style.nix
-    ./window-rules.nix
+    # ./window-rules.nix
   ];
+  stylix.targets.niri.enable = true;
   programs.niri = {
     # enable = true;
     # package = pkgs.niri-stable;
@@ -35,6 +36,8 @@
         { command = ["swww-daemon" "--format" "xrgb"]; }
         { command = ["clipse" "-listen"]; }
       ];
+      binds = import ./keybindings.nix;
+      window-rules = import ./window-rules.nix;
     };
   };
 }

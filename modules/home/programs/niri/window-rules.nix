@@ -1,5 +1,4 @@
-{
-  programs.niri.settings.window-rules = [
+ [
     {
       geometry-corner-radius = {
         bottom-left = 4.;
@@ -16,5 +15,4 @@
       default-column-width.fixed = 900;
       default-window-height.fixed = 600;
     }
-  ];
-}
+  ]

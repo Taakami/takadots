@@ -1,34 +1,25 @@
-{ ... }:
+{ pkgs, ... }:
 {
   imports = [
-    # Apps
-    ./app
-
-    # Medias
-    ./media
-
-    # CLI
-    ./cli
-
-    # Desktop
-    ./desktop
-
-    # Development
-    ./dev
-
-    # Launchers
-    ./launcher
-
+    # Services
+    ./services
+    # Programs
+    ./programs
+    # Packages
+    ./packages
     # Scripts
     ./script
-
-    # Shell
-    ./shell
-
-    # Terminals
-    ./terminal
-    
-    # Windows managers
-    ./wm
   ];
+  stylix = {
+    iconTheme = {
+      enable = true;
+      package = pkgs.fluent-icon-theme;
+      light = "Fluent";
+      dark = "Fluent";
+    };
+    targets = {
+      gtk.enable = true;
+      xfce.enable = true;
+    };
+  };
 }

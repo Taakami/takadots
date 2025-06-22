@@ -22,6 +22,7 @@
   nixpkgs.config.allowUnfree = true;
   nixpkgs.overlays = [
     inputs.niri.overlays.niri
+    # inputs.nix-vscode-extensions.overlays.default
   ];
   system.stateVersion = "25.05";
 }
