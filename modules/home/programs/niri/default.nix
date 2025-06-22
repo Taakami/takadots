@@ -1,6 +1,7 @@
 {
   pkgs,
   inputs,
+  config,
   ...
 }: {
   imports = [
@@ -36,7 +37,7 @@
         { command = ["swww-daemon" "--format" "xrgb"]; }
         { command = ["clipse" "-listen"]; }
       ];
-      binds = import ./keybindings.nix;
+      binds = (import ./keybindings.nix) { inherit config; };
       window-rules = import ./window-rules.nix;
     };
   };
