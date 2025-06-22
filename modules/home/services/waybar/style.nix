@@ -45,7 +45,7 @@
   window#waybar.empty #window {
     background-color: transparent;
   }
-  #window, #mode, #pulseaudio, #battery, #clock, #backlight, #network, #tray {
+  #window, #mode, #pulseaudio, #battery, #clock, #backlight, #network, #tray, #bluetooth {
     margin-top: 8px;
     margin-right: 4px;
     padding-right: 4px;
@@ -55,7 +55,8 @@
   }
   #workspaces button:hover,
   #clock:hover,
-  #pulseaudio:hover {
+  #pulseaudio:hover ,
+  #network:hover {
     background-color: @base0D;
     color: @base00;
   }

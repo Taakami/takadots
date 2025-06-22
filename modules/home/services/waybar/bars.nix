@@ -5,7 +5,7 @@
     position = "top";
     modules-left = [ "niri/workspaces" "tray" ];
     modules-center = [ "niri/window" ];
-    modules-right = [ "pulseaudio" "battery" "clock" "backlight" "network" "bluetooth" ];
+    modules-right = [ "pulseaudio" "battery" "clock" "backlight" "bluetooth" "network" ];
     "niri/window" = {
       max-length = 50;
       icon = true;
@@ -44,16 +44,20 @@
       on-click = "thunderbird -calendar";
     };
     backlight = {
-      format = "{icon} {percent}%";
-      format-icons = [ "" "" ];
-      tooltip = false;
+      format = "{icon}";
+      format-icons = [ "󰛩" "󱩎" "󱩏" "󱩐" "󱩑" "󱩒" "󱩓" "󱩔" "󱩕" "󱩖" "󰛨"];
+      tooltip-format = "{percent}%";
     };
     network = {
-      format-wifi = " {signalStrength}%";
+      format-wifi = "";
       format-disconnected = "󱘖";
-      tooltip-format = "󰴽 {essid}\n {bandwidthUpBits}\n {bandwidthDownBits}";
+      tooltip-format = "󰴽 {essid} ({signalStrength}%)\n {bandwidthUpBits}\n {bandwidthDownBits}";
+      on-click = "rofi-network-manager";
     };
     bluetooth = {
+      format-on = "󰂯";
+      format-off = "󰂲";
+      format-connected = "󰂱";
       tooltip = false;
       on-click = "bzmenu -l rofi";
     };

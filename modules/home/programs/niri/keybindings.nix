@@ -21,6 +21,9 @@
   "Mod+Q".action = close-window;
   "Mod+O".action = toggle-overview;
 
+  "Print".action = screenshot { show-pointer = false; };
+  "Mod+Print".action = screenshot-window;
+
   # Workspace
   "Mod+Ampersand".action = focus-workspace 1;
   "Mod+Eacute".action = focus-workspace 2;

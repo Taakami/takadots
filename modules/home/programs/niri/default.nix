@@ -19,6 +19,7 @@
         };
         power-key-handling.enable = false;
       };
+      screenshot-path = "~/Pictures/Screenshots/%Y-%m-%d_%H-%M-%S.png";
       environment = {
         NIXOS_OZONE_WL = "1"; # support electron and chromium based apps
         DISPLAY = ":0"; # important for xwayland-satellite
