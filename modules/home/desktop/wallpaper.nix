@@ -1,6 +1,6 @@
-{ inputs, pkgs, ... }:
+{ pkgs, ... }:
 {
-  home.packages = with pkgs; [ waypaper ];
+  # home.packages = with pkgs; [ waypaper ];
   services = {
     swww.enable = true;
   };

@@ -7,4 +7,7 @@
     #./pay-respects.nix    # pay-respects command line tool
     ./zsh.nix             # Zsh
   ];
+  programs.starship = {
+    enable = false;
+  };
 }
