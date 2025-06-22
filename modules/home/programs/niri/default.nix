@@ -5,16 +5,10 @@
   ...
 }: {
   imports = [
-    # inputs.niri.homeModules.niri
-    # inputs.niri.homeModules.stylix
-    # ./keybindings.nix
     ./style.nix
-    # ./window-rules.nix
   ];
   stylix.targets.niri.enable = true;
   programs.niri = {
-    # enable = true;
-    # package = pkgs.niri-stable;
     settings = {
       input = {
         keyboard = {
