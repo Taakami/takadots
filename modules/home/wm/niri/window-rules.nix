@@ -10,5 +10,11 @@
       clip-to-geometry = true;
       draw-border-with-background = false;
     }
+    {
+      matches = [ { app-id = "^Clipse$"; } ];
+      open-floating = true;
+      default-column-width.fixed = 480;
+      default-window-height.fixed = 320;
+    }
   ];
 }

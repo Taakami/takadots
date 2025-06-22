@@ -10,9 +10,10 @@
 
     # Apps
     
-    "Mod+Space".action = spawn "rofi" "-show" "combi" "-modes" "combi" "-combi-modes" "'window,drun,run'" "-show-icons";
+    "Mod+Space".action = spawn "rofi" "-show" "combi" "-modes" "combi" "-combi-modes" "'window,drun,run'" "-show-icons" "-l" "10";
     "Mod+Return".action = spawn "alacritty" "-e" "nu";
     "Mod+Shift+N".action = spawn "swaync-client" "-t" "-sw";
+    "Mod+Shift+V".action = spawn "alacritty" "--class" "Clipse" "-e" "clipse";
     "Mod+F10".action = spawn "taka-set-wallpaper";
     "Mod+Shift+F10".action = spawn "taka-set-wallpaper" "random";
     "Mod+F4".action = spawn "taka-power-menu";
@@ -73,6 +74,9 @@
     "Mod+Ctrl+J".action = move-window-down;
     "Mod+Ctrl+K".action = move-window-up;
     "Mod+Ctrl+L".action = move-column-right;
+
+    "Mod+Shift+Z".action = consume-or-expel-window-left;
+    "Mod+Shift+E".action = consume-or-expel-window-right;
 
     "Mod+Shift+Left".action = set-column-width "-10%";
     "Mod+Shift+Right".action = set-column-width "+10%";

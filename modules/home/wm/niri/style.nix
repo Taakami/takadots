@@ -1,4 +1,5 @@
 {
+  config,
   ...
 }: {
   stylix.targets.niri.enable = true;
@@ -27,5 +28,6 @@
       };
     };
     hotkey-overlay.skip-at-startup = true;
+    overview.backdrop-color = config.lib.stylix.colors.withHashtag.base01;
   };
 }

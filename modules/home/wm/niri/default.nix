@@ -29,7 +29,7 @@
         # QT_QPA_PLATFORM = "wayland"; # optional: force QT apps to always use wayland
       };
       spawn-at-startup = [
-        { command = [ "xwayland-satellite" ]; }
+        { command = ["xwayland-satellite"]; }
         { command = ["waybar"]; }
         { command = ["swaync"]; }
         { command = ["swww-daemon" "--format" "xrgb"]; }
