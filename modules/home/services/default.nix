@@ -2,7 +2,6 @@
 {
   imports = [
     ./waybar            # bar
-    ./stylix.nix        # Stylix
   ];
   stylix.targets = {
     swaync.enable = true;
