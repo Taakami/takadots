@@ -14,5 +14,7 @@
     eslint # js linter
     nodePackages.nodejs # nodejs
     nodePackages.pnpm # node package manager
+
+    rofi-network-manager # rofi network manager
   ];
 }
