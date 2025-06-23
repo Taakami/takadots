@@ -1,6 +1,6 @@
 {...}:
 {
-  program = {
+  programs = {
     git = {
       enable = true;
       userName = "Taakami";
