@@ -4,7 +4,7 @@
     gtrash # trash management
     has # detect package
     pastel # show colors !
-    tldr # lazy man pages
+    tlrc # lazy man pages
     dysk # disk usage overview
     dua # disk usage analyzer
     
@@ -16,5 +16,7 @@
     nodePackages.pnpm # node package manager
 
     rofi-network-manager # rofi network manager
+
+    pokeget-rs # pokemon sprites
   ];
 }

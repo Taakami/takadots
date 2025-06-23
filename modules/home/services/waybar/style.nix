@@ -3,9 +3,7 @@
     min-height: 0;
     border: none;
     border-radius: 0;
-    font-family: "JetBrains Mono", monospace, "Symbols Nerd Font";
     font-weight: bold;
-    font-size: 12px;
     transition: background 300ms ease-out, color 300ms ease-out;
     box-shadow: none;
     text-shadow: none;
@@ -50,6 +48,8 @@
     margin-right: 4px;
     padding-right: 4px;
     padding-left: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
     background-color: @base01;
     border-radius: 8px;
   }
@@ -70,6 +70,6 @@
     border: 2px solid @base0A;
   }
   #network {
-    margin-left: 8px;
+    margin-right: 8px;
   }
 ''

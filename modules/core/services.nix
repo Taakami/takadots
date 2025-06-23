@@ -10,5 +10,7 @@
         pulse.enable = true;
         jack.enable = true;
     };
+    gvfs.enable = true;
+    tumbler.enable = true;
   };
 }
