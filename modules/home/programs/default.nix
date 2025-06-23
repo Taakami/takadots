@@ -17,6 +17,8 @@
     ./terminals.nix # terminals
 
     ./niri # scrollable WM
+
+    ./git.nix # git
   ];
   stylix.targets = {
     bat.enable = true;
@@ -44,12 +46,6 @@
       enable = true;
       package = inputs.yazi.packages.${pkgs.system}.default;
     }; # file manager
-    git = {
-        enable = true;
-        userName = "Taakami";
-        userEmail = "dastan39@outlook.fr";
-    }; # git file control system
-    gitui.enable = true; # git with ui
     cava.enable = true; # music visualizer
     imv.enable = true; # image viewer
     mpv.enable = true; # video player
