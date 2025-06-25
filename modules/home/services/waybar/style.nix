@@ -27,7 +27,10 @@
   #window, #pulseaudio, #battery, #clock, #backlight, #network, #tray, #bluetooth {
     margin-top: 8px;
     margin-right: 4px;
-    padding: 4px;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px;
+    padding-top: 4px;
     background-color: @base01;
     border: 2px solid @base01;
     border-radius: 8px;
@@ -40,16 +43,17 @@
     background-color: @base01;
     border: 2px solid @base0B;
     border-radius: 8px;
+    color: @base05;
   }
   #workspaces button {
     padding-left: 5px;
     padding-right: 5px;
     border-radius: 8px;
     margin-right: 4px;
-    color: @base05;
     border: 2px solid @base0B;
   }
   #workspaces button.focused {
+    background-color: @base0B;
     border-color: @base0D;
     color: @base01;
   }
