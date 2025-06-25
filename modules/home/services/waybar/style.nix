@@ -69,10 +69,6 @@
     border-color: @base0B;
     color: @base0B;
   }
-  #pulseaudio.muted {
-    background-color: @base09;
-    color: @base01;
-  }
   #clock {
     border-color: @base0C;
     color: @base0C;
