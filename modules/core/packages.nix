@@ -7,5 +7,6 @@
         brightnessctl               # Backlight control
         wev                         # Wayland event viewer
         wayneko
+        font-manager
     ];
 }
