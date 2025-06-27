@@ -39,7 +39,11 @@
     polarity = "dark";
     targets = {
       console.enable = true;
+      grub = {
+        enable = true;
+        useWallpaper = true;
+      };
     };
-    image = ../../assets/imgs/Landscape_with_a_Chapel_and_Houses_on_a_Mountainside_-_Jean-Jacques_de_Boissieu.jpg;
+    image = ../../assets/imgs/Landscape_with_a_Chapel_and_Houses_on_a_Mountainside_-_Jean-Jacques_de_Boissieu.png;
   };
 }
