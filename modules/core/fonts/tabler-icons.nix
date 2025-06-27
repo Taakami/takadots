@@ -7,7 +7,7 @@ stdenv.mkDerivation rec {
   # Fetch from npm registry as a tarball
   src = fetchurl {
     url = "https://registry.npmjs.org/@tabler/icons-webfont/-/icons-webfont-${version}.tgz";
-    sha256 = ""; # You'll need to update this hash after first build attempt
+    sha256 = "sha256-C2zG2aeDwApjMPnttyOxBjfrOwS+IGWGDrKONQrDXKs="; # You'll need to update this hash after first build attempt
   };
 
   nativeBuildInputs = [ unzip ];
