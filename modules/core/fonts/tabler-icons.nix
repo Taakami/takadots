@@ -4,7 +4,6 @@ stdenv.mkDerivation rec {
   pname = "tabler-icons-webfont";
   version = "3.34.0";
 
-  # Fetch from npm registry as a tarball
   src = fetchurl {
     url = "https://registry.npmjs.org/@tabler/icons-webfont/-/icons-webfont-${version}.tgz";
     sha256 = "sha256-C2zG2aeDwApjMPnttyOxBjfrOwS+IGWGDrKONQrDXKs="; # You'll need to update this hash after first build attempt
@@ -21,22 +20,21 @@ stdenv.mkDerivation rec {
   installPhase = ''
     runHook preInstall
     
+    # Debug: let's see what's actually in the package
+    echo "=== Package contents ==="
+    find package -type f | head -20
+    echo "=== Looking for font files ==="
+    find package -name "*.ttf" -o -name "*.woff" -o -name "*.woff2" 2>/dev/null || echo "No font files found"
+    
     # Create font directories
-    mkdir -p $out/share/fonts/{truetype,woff,woff2}/tabler-icons
+    mkdir -p $out/share/fonts/truetype/tabler-icons
+    mkdir -p $out/debug
     
-    cd package/dist
+    # Copy everything to debug directory so we can inspect
+    cp -r package/* $out/debug/
     
-    # Install font files from dist/fonts/
-    if [ -d "fonts" ]; then
-      # Install TTF files
-      find fonts -name "*.ttf" -exec cp {} $out/share/fonts/truetype/tabler-icons/ \;
-      
-      # Install WOFF files (mainly for web use)
-      find fonts -name "*.woff" -exec cp {} $out/share/fonts/woff/tabler-icons/ \;
-      
-      # Install WOFF2 files (mainly for web use)
-      find fonts -name "*.woff2" -exec cp {} $out/share/fonts/woff2/tabler-icons/ \;
-    fi
+    # Try to find and install any font files
+    find package -name "*.ttf" -exec cp {} $out/share/fonts/truetype/tabler-icons/ \; 2>/dev/null || echo "No TTF files found"
     
     runHook postInstall
   '';
@@ -46,6 +44,5 @@ stdenv.mkDerivation rec {
     homepage = "https://tabler-icons.io/";
     license = licenses.mit;
     platforms = platforms.all;
-    maintainers = [ ]; # Add your name here if you want
   };
 }
