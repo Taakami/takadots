@@ -20,21 +20,23 @@ stdenv.mkDerivation rec {
   installPhase = ''
     runHook preInstall
     
-    # Debug: let's see what's actually in the package
-    echo "=== Package contents ==="
-    find package -type f | head -20
-    echo "=== Looking for font files ==="
-    find package -name "*.ttf" -o -name "*.woff" -o -name "*.woff2" 2>/dev/null || echo "No font files found"
-    
     # Create font directories
-    mkdir -p $out/share/fonts/truetype/tabler-icons
-    mkdir -p $out/debug
+    mkdir -p $out/share/fonts/{truetype,woff,woff2}/tabler-icons
     
-    # Copy everything to debug directory so we can inspect
-    cp -r package/* $out/debug/
+    cd package
     
-    # Try to find and install any font files
-    find package -name "*.ttf" -exec cp {} $out/share/fonts/truetype/tabler-icons/ \; 2>/dev/null || echo "No TTF files found"
+    # Find and install the specific Tabler Icons font files
+    find . -name "tabler-icons.ttf" -exec cp {} $out/share/fonts/truetype/tabler-icons/ \;
+    
+    # Find and install the specific WOFF files
+    find . -name "tabler-icons.woff" -exec cp {} $out/share/fonts/woff/tabler-icons/ \;
+    
+    # Find and install the specific WOFF2 files
+    find . -name "tabler-icons.woff2" -exec cp {} $out/share/fonts/woff2/tabler-icons/ \;
+    
+    # Debug: show what we actually installed
+    echo "=== Installed font files ==="
+    find $out/share/fonts -name "*.ttf" -o -name "*.woff" -o -name "*.woff2"
     
     runHook postInstall
   '';
