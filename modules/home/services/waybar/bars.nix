@@ -10,6 +10,10 @@
       max-length = 50;
       icon = true;
       icon-size = 24;
+      rewrite = {
+        "(.*) - Zen Browser" = " $1 • 🌍";
+        "(.*) - Visual Studio Code" = "$1 • 󰨞";
+      };
     };
     tray = {
       icon-size = 16;
@@ -17,17 +21,16 @@
     };
     pulseaudio = {
       format = "{icon} {volume}%";
-      format-muted = " {volume}%";
-      format-icons = [ "" "" "" ];
+      format-muted = " {volume}%";
+      format-icons = [ "" "" "" ];
       on-click = "pavucontrol";
       tooltip = false;
     };
     battery = {
       format = "{icon} {capacity}%";
-      
-      format-icons = ["" "" "" "" ""];
+      format-icons = ["" "" "" "" ""];
       tooltip-format = "Temps restant : ~{time}";
-      format-charging = " {capacity}%";
+      format-charging = " {capacity}%";
       tooltip-format-charging = "Temps de charge : ~{time}";
       states = {
         warning = 30;
@@ -36,25 +39,25 @@
     };
     clock = {
       timezone = "Europe/Paris";
-      format = " {:%H:%M}";
+      format = " {:%H:%M}";
       tooltip-format = "{:%A, %d %B %Y}";
       on-click = "thunderbird -calendar";
     };
     backlight = {
       format = "{icon}";
-      format-icons = ["﫸" "" "" "" "" ""];
+      format-icons = [ "󰛩" "󱩎" "󱩏" "󱩐" "󱩑" "󱩒" "󱩓" "󱩔" "󱩕" "󱩖" "󰛨"];
       tooltip-format = "{percent}%";
     };
     network = {
-      format-wifi = "";
-      format-disconnected = "";
-      tooltip-format = " {essid} ({signalStrength}%)\n {bandwidthUpBits}\n {bandwidthDownBits}";
+      format-wifi = "";
+      format-disconnected = "󱘖";
+      tooltip-format = "󰴽 {essid} ({signalStrength}%)\n {bandwidthUpBits}\n {bandwidthDownBits}";
       on-click = "rofi-network-manager";
     };
     bluetooth = {
-      format-on = "";
-      format-off = "";
-      format-connected = "";
+      format-on = "󰂯";
+      format-off = "󰂲";
+      format-connected = "󰂱";
       tooltip = false;
       on-click = "bzmenu -l rofi";
     };

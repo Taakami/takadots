@@ -1,7 +1,5 @@
 ''
   * {
-    font-family: tabler-icons, "Maple Mono";
-    font-size: 10pt;
     all: initial;
     min-height: 0;
     border: none;
