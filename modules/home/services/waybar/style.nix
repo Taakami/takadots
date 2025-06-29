@@ -1,6 +1,6 @@
 ''
   * {
-    font-family: "Maple Mono", tabler-icons;
+    font-family: tabler-icons, "Maple Mono";
     font-size: 10pt;
     all: initial;
     min-height: 0;
