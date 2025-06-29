@@ -1,7 +1,7 @@
 ''
   * {
     font-family: "Maple Mono", tabler-icons;
-    font-size: ${builtins.toString fonts.sizes.desktop}pt;
+    font-size: 10pt;
     all: initial;
     min-height: 0;
     border: none;
