@@ -1,9 +1,9 @@
 { config, ... }:
 {
-  stylix.targets.waybar = {
-    enable = true;
-    addCss = false;
-  };
+  # stylix.targets.waybar = {
+  #   enable = true;
+  #   addCss = false;
+  # };
   programs.waybar = {
     enable = true;
     style =
