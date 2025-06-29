@@ -8,6 +8,5 @@
         wev                         # Wayland event viewer
         wayneko
         font-manager
-        (callPackage ./fonts/tabler-icons.nix {})
     ];
 }
