@@ -21,22 +21,18 @@ stdenv.mkDerivation rec {
     runHook preInstall
     
     # Create font directories
-    mkdir -p $out/share/fonts/{truetype,woff,woff2}/tabler-icons
+    mkdir -p $out/share/fonts/{truetype,woff,woff2}/
     
     cd package
     
     # Find and install the specific Tabler Icons font files
-    find . -name "tabler-icons.ttf" -exec cp {} $out/share/fonts/truetype/tabler-icons/ \;
+    find . -name "tabler-icons.ttf" -exec cp {} $out/share/fonts/truetype/ \;
     
     # Find and install the specific WOFF files
-    find . -name "tabler-icons.woff" -exec cp {} $out/share/fonts/woff/tabler-icons/ \;
+    find . -name "tabler-icons.woff" -exec cp {} $out/share/fonts/woff/ \;
     
     # Find and install the specific WOFF2 files
-    find . -name "tabler-icons.woff2" -exec cp {} $out/share/fonts/woff2/tabler-icons/ \;
-    
-    # Debug: show what we actually installed
-    echo "=== Installed font files ==="
-    find $out/share/fonts -name "*.ttf" -o -name "*.woff" -o -name "*.woff2"
+    find . -name "tabler-icons.woff2" -exec cp {} $out/share/fonts/woff2/ \;
     
     runHook postInstall
   '';
