@@ -7,6 +7,10 @@
     tlrc # lazy man pages
     dysk # disk usage overview
     dua # disk usage analyzer
+
+    imagemagick # img cli
+    ffmpeg # video cli
+    ueberzugpp # visualize img in term
     
     obsidian # markdown note taking app
 

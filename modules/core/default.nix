@@ -2,7 +2,7 @@
 {
   imports = [
     ./bluetooth.nix
-    ./bootloader.nix
+    ./bootloader
     ./fonts.nix
     ./greeter.nix
     ./hardware.nix
