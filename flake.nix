@@ -52,6 +52,16 @@
           inherit self inputs username;
         };
       };
+      saturne = nixpkgs.lib.nixosSystem {
+        inherit system;
+        modules = [
+          ./hosts/saturne
+        ];
+        specialArgs = {
+          host = "saturne";
+          inherit self inputs username;
+        };
+      };
     };
   };
 }
