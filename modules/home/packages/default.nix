@@ -23,5 +23,6 @@
     rofi-network-manager # rofi network manager
 
     pokeget-rs # pokemon sprites
+    github-desktop #github desktop app
   ];
 }
