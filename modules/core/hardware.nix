@@ -1,4 +1,4 @@
-{ pkgs,... }:
+{ pkgs, host,... }:
 {
   hardware = {
     bluetooth = {
