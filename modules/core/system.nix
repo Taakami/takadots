@@ -1,6 +1,5 @@
 { pkgs, inputs, ... }:
 {
-  # imports = [ inputs.niri.nixosModules.niri ];
   nix = {
     settings = {
       auto-optimise-store = true;
@@ -19,10 +18,12 @@
     };
   };
 
-  nixpkgs.config.allowUnfree = true;
-  nixpkgs.overlays = [
-    inputs.niri.overlays.niri
-    # inputs.nix-vscode-extensions.overlays.default
-  ];
+  nixpkgs = {
+    config.allowUnfree = true;
+    overlays = [
+      inputs.niri.overlays.niri
+      # inputs.nix-vscode-extensions.overlays.default
+    ];
+  };
   system.stateVersion = "25.05";
 }

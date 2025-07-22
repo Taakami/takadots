@@ -7,6 +7,7 @@
     tlrc # lazy man pages
     dysk # disk usage overview
     dua # disk usage analyzer
+    calcure # calendar
 
     imagemagick # img cli
     ffmpeg # video cli

@@ -10,10 +10,6 @@
       max-length = 50;
       icon = true;
       icon-size = 24;
-      rewrite = {
-        "(.*) - Zen Browser" = " $1 • 🌍";
-        "(.*) - Visual Studio Code" = "$1 • 󰨞";
-      };
     };
     tray = {
       icon-size = 16;

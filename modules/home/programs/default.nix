@@ -2,12 +2,12 @@
 {
   imports = [
     ./fastfetch.nix # to be a cool kid
-    ./vscode.nix # coding like a normie
-    ./neovim.nix # coding with style (maybe one day)
-    ./spotify.nix # music player
     ./discord.nix # messaging app
-    ./zen-browser.nix # firefox fork
+    ./neovim.nix # coding with style (maybe one day)
     ./rofi.nix # app launcher & dmenu
+    ./spotify.nix # music player
+    ./vscode.nix # coding like a normie
+    ./zen-browser.nix # firefox fork
 
     ./zsh.nix # the shell that is POSIX
     ./nushell.nix # the shell I love
@@ -23,40 +23,39 @@
   stylix.targets = {
     bat.enable = true;
     btop.enable = true;
-    fzf.enable = true;
-    yazi.enable = true;
     cava = {
       enable = true;
       rainbow.enable = true;
     };
+    fzf.enable = true;
     mpv.enable = true;
+    yazi.enable = true;
     zathura.enable = true;
   };
   programs = {
     bat.enable = true; # cat replacement
     btop.enable = true; # resources monitoring
+    cava.enable = true; # music visualizer
     eza.enable = true; # ls replacement
     fd.enable = true; # find replacement
     fzf.enable = true; # fuzzy finder
+    imv.enable = true; # image viewer
     jq.enable = true; # JSON processor
-    zoxide.enable = true; # cd replacement
+    mpv.enable = true; # video player
     ripgrep.enable = true; # grep replacement
     ripgrep-all.enable = true; # ripgrep but with more file support
-    yazi = {
-      enable = true;
-      package = inputs.yazi.packages.${pkgs.system}.default;
-    }; # file manager
-    cava.enable = true; # music visualizer
-    imv.enable = true; # image viewer
-    mpv.enable = true; # video player
     swayimg.enable = true; # image viewer
-    zathura.enable = true; # pdf viewer
     thunderbird = {
       enable = true;
       profiles.${username} = {
         isDefault = true;
       };
     }; # email and calendar client
-    qutebrowser.enable = false; # TUI browser
+    yazi = {
+      enable = true;
+      package = inputs.yazi.packages.${pkgs.system}.default;
+    }; # file manager
+    zathura.enable = true; # pdf viewer
+    zoxide.enable = true; # cd replacement
   };
 }

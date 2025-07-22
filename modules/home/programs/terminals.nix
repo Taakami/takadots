@@ -4,7 +4,7 @@
     alacritty.enable = true;
     foot.enable = true;
     ghostty.enable = false;
-    kitty.enable = false;
+    kitty.enable = true;
   };
   programs = {
     alacritty = {
@@ -26,7 +26,7 @@
       enable = false;
     };
     kitty = {
-      enable = false;
+      enable = true;
       enableGitIntegration = true;
     };
   };
