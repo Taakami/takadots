@@ -7,6 +7,7 @@
     ./rofi.nix # app launcher & dmenu
     ./spotify.nix # music player
     ./vscode.nix # coding like a normie
+    ./zed.nix # ide
     ./zen-browser.nix # firefox fork
 
     ./zsh.nix # the shell that is POSIX
