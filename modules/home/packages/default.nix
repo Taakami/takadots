@@ -19,11 +19,12 @@
     eslint # js linter
     nodePackages.nodejs # nodejs
     nodePackages.pnpm # node package manager
-    ni # auto use the good node package manager
+    # ni # auto use the good node package manager
 
     rofi-network-manager # rofi network manager
 
     pokeget-rs # pokemon sprites
     github-desktop #github desktop app
+    waypaper # wallpaper manager
   ];
 }
