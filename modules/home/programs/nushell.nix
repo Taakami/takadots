@@ -8,7 +8,7 @@
     };
     plugins = with pkgs.nushellPlugins; [
       query
-      highlight
+      # highlight
     ];
     shellAliases = {
       nix-switch = "nh os switch";
