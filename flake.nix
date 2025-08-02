@@ -30,17 +30,19 @@
     bzmenu.url = "github:e-tho/bzmenu";
   };
 
-  outputs = { self, nixpkgs, ... }@inputs:
-    let 
-      username = "taka";
-      system = "x86_64-linux";
-      pkgs = import nixpkgs {
-        inherit system;
-        config.allowUnfree = true;
-      };
-      lib = nixpkgs.lib;
-    in
-    {
+  outputs = {
+    self,
+    nixpkgs,
+    ...
+  } @ inputs: let
+    username = "taka";
+    system = "x86_64-linux";
+    pkgs = import nixpkgs {
+      inherit system;
+      config.allowUnfree = true;
+    };
+    lib = nixpkgs.lib;
+  in {
     nixosConfigurations = {
       mars = nixpkgs.lib.nixosSystem {
         inherit system;

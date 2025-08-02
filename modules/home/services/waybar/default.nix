@@ -1,5 +1,4 @@
-{ config, ... }:
-{
+{config, ...}: {
   stylix.targets.waybar = {
     enable = true;
     addCss = false;

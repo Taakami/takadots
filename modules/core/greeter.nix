@@ -1,5 +1,8 @@
-{pkgs, config, ...}:
 {
+  pkgs,
+  config,
+  ...
+}: {
   # services.greetd = {
   #   enable = true;
   #   settings = rec {
@@ -18,10 +21,9 @@
         timezone = "Europe/Paris";
       };
       env = {
-
       };
     };
-    cageArgs = [ "-s" "-m" "last" ];
+    cageArgs = ["-s" "-m" "last"];
   };
   stylix.targets.regreet.enable = true;
   environment.sessionVariables = {

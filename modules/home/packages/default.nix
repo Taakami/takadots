@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   home.packages = with pkgs; [
     gtrash # trash management
     has # detect package
@@ -12,7 +11,7 @@
     imagemagick # img cli
     ffmpeg # video cli
     ueberzugpp # visualize img in term
-    
+
     obsidian # markdown note taking app
 
     alejandra # nix formatter

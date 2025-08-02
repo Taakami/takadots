@@ -1,6 +1,10 @@
-{ username, pkgs, inputs, ... }:
 {
-  imports = [ inputs.niri.nixosModules.niri ];
+  username,
+  pkgs,
+  inputs,
+  ...
+}: {
+  imports = [inputs.niri.nixosModules.niri];
 
   programs = {
     dconf.enable = true;
@@ -9,9 +13,9 @@
     thunar = {
       enable = true;
       plugins = with pkgs.xfce; [
-          thunar-archive-plugin # Requires an Archive manager like file-roller, ark, etc
-          thunar-volman
-          thunar-vcs-plugin
+        thunar-archive-plugin # Requires an Archive manager like file-roller, ark, etc
+        thunar-volman
+        thunar-vcs-plugin
       ];
     };
     nh = {
@@ -28,5 +32,5 @@
       package = pkgs.niri-stable;
     };
   };
-  environment.pathsToLink = [ "/share/zsh" ];
+  environment.pathsToLink = ["/share/zsh"];
 }

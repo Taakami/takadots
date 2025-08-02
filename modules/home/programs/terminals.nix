@@ -1,5 +1,4 @@
-{ ... }:
-{
+{...}: {
   stylix.targets = {
     alacritty.enable = true;
     foot.enable = true;

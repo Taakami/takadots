@@ -5,7 +5,7 @@
 }: let
   spicePkgs = inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.system};
 in {
-  imports = [ inputs.spicetify-nix.homeManagerModules.default ];
+  imports = [inputs.spicetify-nix.homeManagerModules.default];
   stylix.targets.spicetify.enable = true;
   programs.spicetify = {
     enable = true;

@@ -1,5 +1,8 @@
-{ pkgs, config, ... }:
 {
+  pkgs,
+  config,
+  ...
+}: {
   imports = [
     ./hardware-configuration.nix
     ./../../modules/core
@@ -20,7 +23,7 @@
       percentageAction = 3;
       criticalPowerAction = "PowerOff";
     };
-    
+
     tlp.settings = {
       CPU_ENERGY_PERF_POLICY_ON_AC = "power";
       CPU_ENERGY_PERF_POLICY_ON_BAT = "power";
@@ -47,5 +50,4 @@
   };
 
   powerManagement.cpuFreqGovernor = "performance";
-
 }

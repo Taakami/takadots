@@ -26,13 +26,13 @@
         # QT_QPA_PLATFORM = "wayland"; # optional: force QT apps to always use wayland
       };
       spawn-at-startup = [
-        { command = ["xwayland-satellite"]; }
-        { command = ["waybar"]; }
-        { command = ["swaync"]; }
-        { command = ["swww-daemon" "--format" "xrgb"]; }
-        { command = ["clipse" "-listen"]; }
+        {command = ["xwayland-satellite"];}
+        {command = ["waybar"];}
+        {command = ["swaync"];}
+        {command = ["swww-daemon" "--format" "xrgb"];}
+        {command = ["clipse" "-listen"];}
       ];
-      binds = (import ./keybindings.nix) { inherit config; };
+      binds = (import ./keybindings.nix) {inherit config;};
       window-rules = import ./window-rules.nix;
     };
   };

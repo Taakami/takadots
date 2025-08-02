@@ -1,5 +1,4 @@
-{...}:
-{
+{...}: {
   stylix.targets.neovim = {
     enable = true;
     transparentBackground.main = true;

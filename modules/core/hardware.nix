@@ -1,5 +1,8 @@
-{ pkgs, host,... }:
 {
+  pkgs,
+  host,
+  ...
+}: {
   hardware = {
     bluetooth = {
       enable = true;
@@ -18,7 +21,7 @@
     networkmanager = {
       enable = true;
       wifi = {
-          powersave = true;
+        powersave = true;
       };
     };
   };

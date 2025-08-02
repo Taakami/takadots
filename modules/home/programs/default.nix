@@ -1,5 +1,9 @@
-{ pkgs, inputs, username, ... }:
 {
+  pkgs,
+  inputs,
+  username,
+  ...
+}: {
   imports = [
     ./fastfetch.nix # to be a cool kid
     ./discord.nix # messaging app
@@ -14,7 +18,7 @@
     ./nushell.nix # the shell I love
     ./fish.nix # a random shell
     ./starship.nix # shell prompt
-    
+
     ./terminals.nix # terminals
 
     ./niri # scrollable WM

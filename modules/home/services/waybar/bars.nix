@@ -1,11 +1,10 @@
-
 {
   mainBar = {
     layer = "top";
     position = "top";
-    modules-left = [ "niri/workspaces" "tray" ];
-    modules-center = [ "niri/window" ];
-    modules-right = [ "pulseaudio" "battery" "clock" "backlight" "bluetooth" "network" ];
+    modules-left = ["niri/workspaces" "tray"];
+    modules-center = ["niri/window"];
+    modules-right = ["pulseaudio" "battery" "clock" "backlight" "bluetooth" "network"];
     "niri/window" = {
       max-length = 50;
       icon = true;
@@ -18,7 +17,7 @@
     pulseaudio = {
       format = "{icon} {volume}%";
       format-muted = " {volume}%";
-      format-icons = [ "" "" "" ];
+      format-icons = ["" "" ""];
       on-click = "pavucontrol";
       tooltip = false;
     };
@@ -41,7 +40,7 @@
     };
     backlight = {
       format = "{icon}";
-      format-icons = [ "󰛩" "󱩎" "󱩏" "󱩐" "󱩑" "󱩒" "󱩓" "󱩔" "󱩕" "󱩖" "󰛨"];
+      format-icons = ["󰛩" "󱩎" "󱩏" "󱩐" "󱩑" "󱩒" "󱩓" "󱩔" "󱩕" "󱩖" "󰛨"];
       tooltip-format = "{percent}%";
     };
     network = {
@@ -59,4 +58,3 @@
     };
   };
 }
-  

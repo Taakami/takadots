@@ -1,4 +1,4 @@
- [
+[
   {
     geometry-corner-radius = {
       bottom-left = 4.;
@@ -10,7 +10,7 @@
     draw-border-with-background = false;
   }
   {
-    matches = [ { app-id = "^Clipse$"; } ];
+    matches = [{app-id = "^Clipse$";}];
     open-floating = true;
     default-column-width.fixed = 900;
     default-window-height.fixed = 600;

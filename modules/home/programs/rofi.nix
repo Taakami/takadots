@@ -1,5 +1,10 @@
-{ pkgs, config, lib, inputs, ... } :
 {
+  pkgs,
+  config,
+  lib,
+  inputs,
+  ...
+}: {
   stylix.targets.rofi.enable = true;
   programs.rofi = {
     enable = true;
@@ -15,15 +20,16 @@
       # show-icons = true;
       "display-drun" = "";
     };
-    theme =  let
-     inherit (config.lib.formats.rasi) mkLiteral;
-      in lib.mkAfter {
-      element-icon = {
+    theme = let
+      inherit (config.lib.formats.rasi) mkLiteral;
+    in
+      lib.mkAfter {
+        element-icon = {
           size = mkLiteral "2em";
+        };
       };
-    };
   };
-  home.packages = with pkgs; [ 
+  home.packages = with pkgs; [
     inputs.bzmenu.packages.${system}.default
     inputs.iwmenu.packages.${system}.default
   ];

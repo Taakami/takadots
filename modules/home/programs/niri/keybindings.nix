@@ -1,14 +1,12 @@
-{
-  config,
-  ...
-}: with config.lib.niri.actions; {
+{config, ...}:
+with config.lib.niri.actions; {
   # Volume
   "XF86AudioRaiseVolume".action = spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%+";
   "XF86AudioLowerVolume".action = spawn "wpctl" "set-volume" "@DEFAULT_AUDIO_SINK@" "5%-";
   "XF86AudioMute".action = spawn "wpctl" "set-mute" "@DEFAULT_AUDIO_SINK@" "toggle";
 
   # Apps
-  
+
   "Mod+Space".action = spawn "rofi" "-show" "combi" "-modes" "combi" "-combi-modes" "'window,drun,run'" "-show-icons" "-l" "10";
   "Mod+Return".action = spawn "alacritty" "-e" "nu";
   "Mod+Shift+N".action = spawn "swaync-client" "-t" "-sw";
@@ -21,7 +19,7 @@
   "Mod+Q".action = close-window;
   "Mod+O".action = toggle-overview;
 
-  "Print".action = screenshot { show-pointer = false; };
+  "Print".action = screenshot {show-pointer = false;};
   "Mod+Print".action = screenshot-window;
 
   # Workspace

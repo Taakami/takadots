@@ -1,5 +1,4 @@
-{ ... }:
-{
+{...}: {
   stylix.targets.zed = {
     enable = true;
   };
@@ -13,6 +12,6 @@
       "oxc"
       "oxlint"
       "stylelint"
-      ];
+    ];
   };
 }

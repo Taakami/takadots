@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-let
+{pkgs, ...}: let
   scriptDir = ./scripts;
   scriptEntries = builtins.readDir scriptDir;
 
@@ -7,20 +6,21 @@ let
     builtins.attrNames scriptEntries
   );
 
-  shellScripts = builtins.filter (
-    name: builtins.match ".*\\.nu$" name != null
-  ) regularFiles;
+  shellScripts =
+    builtins.filter (
+      name: builtins.match ".*\\.nu$" name != null
+    )
+    regularFiles;
 
   mkScript = name: {
     name = name;
-    value = pkgs.writeScriptBin (builtins.replaceStrings [ ".nu" ] [ "" ] name) (
+    value = pkgs.writeScriptBin (builtins.replaceStrings [".nu"] [""] name) (
       builtins.readFile (scriptDir + "/${name}")
     );
   };
 
   scriptsSet = builtins.listToAttrs (map mkScript shellScripts);
   scripts = builtins.attrValues scriptsSet;
-in
-{
+in {
   home.packages = scripts;
 }

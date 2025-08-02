@@ -1,4 +1,9 @@
-{ host, ... }:
-{
-  imports = [ (if host == "mars" then ./grub.nix else ./systemd.nix) ];
+{host, ...}: {
+  imports = [
+    (
+      if host == "mars"
+      then ./grub.nix
+      else ./systemd.nix
+    )
+  ];
 }

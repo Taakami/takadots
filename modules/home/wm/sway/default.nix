@@ -1,8 +1,4 @@
-{
-  pkgs,
-  ...
-}:
-{
+{pkgs, ...}: {
   imports = [
     ./keybindings.nix
     ./style.nix
@@ -20,16 +16,16 @@
       };
       defaultWorkspace = "workspace number 1";
       input."*" = {
-          xkb_layout = "fr";
+        xkb_layout = "fr";
       };
       startup = [
-        { command = "swaync"; }
-        { command = "swww-daemon --format xrgb"; }
-        { command = "clipse -listen"; }
+        {command = "swaync";}
+        {command = "swww-daemon --format xrgb";}
+        {command = "clipse -listen";}
       ];
       workspaceAutoBackAndForth = true;
       bars = [
-        { command = "waybar"; }
+        {command = "waybar";}
       ];
     };
   };

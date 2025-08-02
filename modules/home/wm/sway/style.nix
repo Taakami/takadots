@@ -1,5 +1,4 @@
-{...}:
-{
+{...}: {
   stylix.targets.sway.enable = true;
   wayland.windowManager.sway = {
     config = {
