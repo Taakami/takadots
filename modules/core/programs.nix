@@ -18,6 +18,7 @@
         thunar-vcs-plugin
       ];
     };
+    file-roller.enable = true;
     nh = {
       enable = true;
       clean = {

@@ -2,7 +2,7 @@
   stylix.targets = {
     alacritty.enable = true;
     foot.enable = true;
-    ghostty.enable = false;
+    ghostty.enable = true;
     kitty.enable = true;
   };
   programs = {
@@ -22,7 +22,7 @@
       enable = true;
     };
     ghostty = {
-      enable = false;
+      enable = true;
     };
     kitty = {
       enable = true;
