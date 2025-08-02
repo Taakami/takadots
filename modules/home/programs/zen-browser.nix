@@ -8,7 +8,7 @@
   ];
   stylix.targets.zen-browser = {
     enable = true;
-    profileNames = ["default"]
+    profileNames = ["default"];
   };
   programs.zen-browser = {
     enable = true;
