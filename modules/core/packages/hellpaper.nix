@@ -19,7 +19,7 @@ stdenv.mkDerivation rec {
     owner = "danihek";
     repo = "hellpaper";
     rev = "main";
-    sha256 = "sha256-RQuvEZEi1IX9yop+rKc+rxq+qM2mivL8FTZH6KUwPgw="; # You'll need to update this hash after first build attempt
+    sha256 = "sha256-RQuvEZEi1IX9yop+rKc+rxq+qM2mivL8FTZH6KUwPgw=";
   };
 
   nativeBuildInputs = [
@@ -42,42 +42,42 @@ stdenv.mkDerivation rec {
   preBuild = ''
     # Remove raylib submodule if it exists
     rm -rf raylib || true
-
+    
     # Set up build environment to use system raylib
     export CFLAGS="-I${raylib}/include $CFLAGS"
     export LDFLAGS="-L${raylib}/lib -lraylib $LDFLAGS"
   '';
 
-  # Build Wayland version only
+  # Build using default make target
   buildPhase = ''
     runHook preBuild
-
-    make wayland RAYLIB_LIBTYPE=SHARED
-
+    
+    make RAYLIB_LIBTYPE=SHARED
+    
     runHook postBuild
   '';
 
   installPhase = ''
     runHook preInstall
-
+    
     mkdir -p $out/bin
-
+    
     # Install Wayland binary
     cp hellpaper $out/bin/hellpaper
-
+    
     runHook postInstall
   '';
 
   meta = with lib; {
     description = "A wallpaper picker for Linux built with Raylib";
     longDescription = ''
-      Hellpaper is a wallpaper picker for Linux featuring multiple animated
-      layouts, live search, full-screen preview, GPU-accelerated effects,
+      Hellpaper is a wallpaper picker for Linux featuring multiple animated 
+      layouts, live search, full-screen preview, GPU-accelerated effects, 
       and total customization. Supports both Wayland and X11.
     '';
     homepage = "https://github.com/danihek/hellpaper";
     license = licenses.mit; # Update based on actual license
-    maintainers = [];
+    maintainers = [ ];
     platforms = platforms.linux;
     mainProgram = "hellpaper";
   };
