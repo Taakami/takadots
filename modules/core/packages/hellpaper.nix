@@ -13,7 +13,7 @@
 }:
 stdenv.mkDerivation rec {
   pname = "hellpaper";
-  version = "unstable-2024-12-01";
+  version = "unstable-2025-06-28";
 
   src = fetchFromGitHub {
     owner = "danihek";
@@ -36,6 +36,14 @@ stdenv.mkDerivation rec {
     libGL
     # Audio
     alsa-lib
+    # Image format support - include dev outputs for headers
+    libpng.dev
+    libjpeg.dev  
+    libwebp
+    # Additional image libraries that raylib might need
+    zlib.dev
+    # Standard image libraries
+    stb
   ];
 
   # Use system raylib instead of bundled version
@@ -43,9 +51,10 @@ stdenv.mkDerivation rec {
     # Remove raylib submodule if it exists
     rm -rf raylib || true
     
-    # Set up build environment to use system raylib
-    export CFLAGS="-I${raylib}/include $CFLAGS"
-    export LDFLAGS="-L${raylib}/lib -lraylib $LDFLAGS"
+    # Set up build environment to use system raylib and image libraries
+    export CFLAGS="-I${raylib}/include -I${libpng.dev}/include -I${libjpeg.dev}/include -I${libwebp}/include $CFLAGS"
+    export LDFLAGS="-L${raylib}/lib -lraylib -L${libpng.out}/lib -lpng -L${libjpeg.out}/lib -ljpeg -L${libwebp}/lib -lwebp -lz $LDFLAGS"
+    export PKG_CONFIG_PATH="${raylib}/lib/pkgconfig:${libpng.dev}/lib/pkgconfig:${libjpeg.dev}/lib/pkgconfig:${libwebp}/lib/pkgconfig:$PKG_CONFIG_PATH"
   '';
 
   # Build using default make target
