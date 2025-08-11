@@ -36,14 +36,11 @@ stdenv.mkDerivation rec {
     libGL
     # Audio
     alsa-lib
-    # Image format support - include dev outputs for headers
-    libpng.dev
-    libjpeg.dev  
+    # Image format support
+    libpng
+    libjpeg
     libwebp
-    # Additional image libraries that raylib might need
-    zlib.dev
-    # Standard image libraries
-    stb
+    zlib
   ];
 
   # Use system raylib instead of bundled version
