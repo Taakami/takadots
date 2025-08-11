@@ -36,11 +36,6 @@ stdenv.mkDerivation rec {
     libGL
     # Audio
     alsa-lib
-    # Image format support
-    libpng
-    libjpeg
-    libwebp
-    zlib
   ];
 
   # Use system raylib instead of bundled version
@@ -48,10 +43,9 @@ stdenv.mkDerivation rec {
     # Remove raylib submodule if it exists
     rm -rf raylib || true
     
-    # Set up build environment to use system raylib and image libraries
-    export CFLAGS="-I${raylib}/include -I${libpng.dev}/include -I${libjpeg.dev}/include -I${libwebp}/include $CFLAGS"
-    export LDFLAGS="-L${raylib}/lib -lraylib -L${libpng.out}/lib -lpng -L${libjpeg.out}/lib -ljpeg -L${libwebp}/lib -lwebp -lz $LDFLAGS"
-    export PKG_CONFIG_PATH="${raylib}/lib/pkgconfig:${libpng.dev}/lib/pkgconfig:${libjpeg.dev}/lib/pkgconfig:${libwebp}/lib/pkgconfig:$PKG_CONFIG_PATH"
+    # Set up build environment to use system raylib
+    export CFLAGS="-I${raylib}/include $CFLAGS"
+    export LDFLAGS="-L${raylib}/lib -lraylib $LDFLAGS"
   '';
 
   # Build using default make target
