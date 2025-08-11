@@ -8,9 +8,9 @@ with config.lib.niri.actions; {
   # Apps
 
   "Mod+Space".action = spawn "rofi" "-show" "combi" "-modes" "combi" "-combi-modes" "'window,drun,run'" "-show-icons" "-l" "10";
-  "Mod+Return".action = spawn "alacritty" "-e" "nu";
+  "Mod+Return".action = spawn "ghostty" "-e" "nu";
   "Mod+Shift+N".action = spawn "swaync-client" "-t" "-sw";
-  "Mod+Shift+V".action = spawn "alacritty" "--class" "Clipse" "-e" "clipse";
+  "Mod+Shift+V".action = spawn "ghostty" "--class" "Clipse" "-e" "clipse";
   "Mod+F10".action = spawn "taka-set-wallpaper";
   "Mod+Shift+F10".action = spawn "taka-set-wallpaper" "random";
   "Mod+F4".action = spawn "taka-power-menu";
