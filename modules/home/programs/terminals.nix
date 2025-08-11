@@ -23,6 +23,10 @@
     };
     ghostty = {
       enable = true;
+      settings = {
+        window-padding-x = 8;
+        window-padding-y = 8;
+      };
     };
     kitty = {
       enable = true;
