@@ -1,7 +1,7 @@
 {...}: {
-  stylix.targets.fish.enable = false;
+  stylix.targets.fish.enable = true;
   programs.fish = {
-    enable = false;
+    enable = true;
     shellAbbrs = {
       nix-switch = "nh os switch";
       nix-update = "nh os switch --update";
