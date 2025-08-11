@@ -7,5 +7,6 @@
     wev # Wayland event viewer
     wayneko
     font-manager
+    (callPackage ./packages/hellpaper.nix { })
   ];
 }

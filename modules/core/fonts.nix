@@ -7,6 +7,6 @@
     noto-fonts-emoji
     maple-mono.variable
     maple-mono.NF
-    (callPackage ./fonts/tabler-icons.nix {})
+    (callPackage ./packages/tabler-icons.nix {})
   ];
 }
